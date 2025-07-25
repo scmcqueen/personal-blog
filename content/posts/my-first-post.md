@@ -1,7 +1,9 @@
 +++
 date = '2025-07-25T14:00:23-04:00'
 title = 'My First Post'
+draft = false
 +++
+
 # My first post
 
 I'm following along with the [Hugo Demo](https://gohugo.io/getting-started/quick-start/) so that I can set up a blog. I don't really have anything that interesting to say but I think it would be nice to have a place to keep some thoughts, doodles, and opinions. I read a lot of books and watch a lot of TV and have many thoughts on these. I'm also going to try and read more papers now that I'm done with grad school, so that my brain doesn't fully atrophy. It would be nice to have a place for my thoughts and notes on that.
