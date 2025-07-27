@@ -2,7 +2,7 @@
 date = '2025-07-25T14:00:23-04:00'
 title = 'My First Post'
 draft = false
-menu = "main"
+tags = [ "blog", "personal"]
 +++
 
 # My first post
