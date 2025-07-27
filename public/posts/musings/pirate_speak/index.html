@@ -99,17 +99,24 @@ I think it would be cool. Some people have catch phrases (e.g. calling someone â
     color: var(--text-color);
   }
 
-  h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: var(--font-funky);
+    font-family: var(--font-family);
     color: var(--heading-color);
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  h1 {
+    font-family: var(--font-funky);
     text-transform: lowercase;
     font-weight: bolder;
     font-style: italic;
+    color: var(--heading-color);
+    text-align: center;
   }
 
   a {
@@ -184,7 +191,11 @@ I think it would be cool. Some people have catch phrases (e.g. calling someone â
   }
 
   .title h1 {
-    font-size: 1.5em;
+    font-size: 2.8em;
+    font-family: var(--font-funky);
+    text-transform: lowercase;
+    font-weight: bolder;
+    font-style: italic;
   }
 
   .inline {
@@ -224,7 +235,7 @@ I think it would be cool. Some people have catch phrases (e.g. calling someone â
 
 <body>
   <header><a href="/" class="title">
-  <h2>Skyeler&#39;s Blog</h2>
+  <h1>Skyeler&#39;s Blog</h1>
 </a>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -236,7 +247,7 @@ I think it would be cool. Some people have catch phrases (e.g. calling someone â
 
 <a href="/posts/musings/">musings</a>
 
-<a href="/posts/recs/">rec</a>
+<a href="/posts/recs/">recs</a>
 
 <a href="/posts/reviews/">reviews</a>
 
