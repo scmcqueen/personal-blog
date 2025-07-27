@@ -54,13 +54,14 @@ Serious Stuff As I transition from graduate school to working full-time as a dat
   :root {
     --width: 720px;
     --font-main: Verdana, sans-serif;
+    --font-funky: 'Playfair Display', serif;
     --font-secondary: Verdana, sans-serif;
     --font-scale: 1em;
-    --background-color: #fff;
-    --heading-color: #222;
-    --text-color: #444;
-    --link-color: #3273dc;
-    --visited-color: #8b6fcb;
+    --background-color: #F2F9FF;
+    --heading-color: #E85D75;
+    --text-color: #081C2D;
+    --link-color: #E85D75;
+    --visited-color: #1173D0;
     --code-background-color: #f2f2f2;
     --code-color: #222;
     --blockquote-color: #222;
@@ -68,11 +69,11 @@ Serious Stuff As I transition from graduate school to working full-time as a dat
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --background-color: #01242e;
+      --background-color: #081C2D;
       --heading-color: #eee;
       --text-color: #ddd;
-      --link-color: #8cc2dd;
-      --visited-color: #8b6fcb;
+      --link-color: #E85D75;
+      --visited-color: #1173D0;
       --code-background-color: #000;
       --code-color: #ddd;
       --blockquote-color: #ccc;
@@ -99,8 +100,10 @@ Serious Stuff As I transition from graduate school to working full-time as a dat
   h4,
   h5,
   h6 {
-    font-family: var(--font-main);
+    font-family: var(--font-family);
     color: var(--heading-color);
+    text-align: center;
+    text-transform: lowercase;
   }
 
   a {
@@ -175,7 +178,11 @@ Serious Stuff As I transition from graduate school to working full-time as a dat
   }
 
   .title h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    font-family: var(--font-funky);
+    text-transform: lowercase;
+    font-weight: bolder;
+    font-style: italic;
   }
 
   .inline {
@@ -210,15 +217,18 @@ Serious Stuff As I transition from graduate school to working full-time as a dat
   ul.blog-posts li a:visited {
     color: var(--visited-color);
   }
-
 </style>
-
 </head>
 
 <body>
   <header><a href="/" class="title">
-  <h2>Skyeler&#39;s Blog</h2>
+  <h1>Skyeler&#39;s Blog</h1>
 </a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Work+Sans:wght@300&display=swap"
+  rel="stylesheet">
 <nav>
 <a href="/">home</a>
 
@@ -230,8 +240,7 @@ Serious Stuff As I transition from graduate school to working full-time as a dat
 
 <a href="/posts/serious/">serious</a>
 
-</nav>
-</header>
+</nav></header>
   <main>
 <h1 id="welcome-to-my-blog">Welcome to my blog</h1>
 <p>Hello! It&rsquo;s me. Here is my space where I want to share my thoughts &amp; feelings about a variety of different things.</p>
