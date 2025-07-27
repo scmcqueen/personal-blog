@@ -1,6 +1,6 @@
 +++
 date = '2025-07-26T23:08:32-04:00'
-draft = true
+draft = false
 title = 'pirate speak'
 tags = ['linguistics']
 +++
