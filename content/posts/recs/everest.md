@@ -25,7 +25,6 @@ I get everything mild because I'm a wimp but I'll get the momos medium for my Sa
 
 I also think that everyone who works here is amazing? The staff is always so sweet and kind. It's also nice to go to a place where I see lots of families enjoying a meal together. Maybe I'm a boring individual but I love a family friendly establishment.
 
-<!-- Shitty photo -->
-![Crappy photo of various dishes at Everest Momo](everest_food.png)
+{{< figure src="https://scmcqueen.github.io/personal-blog/posts/recs/everest_food.png" alt="An example image" width="300" >}}
 
 Anyways you should go here. It is perhaps the restaurant I will miss most in Ann Arbor.
