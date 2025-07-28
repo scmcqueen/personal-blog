@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>musings on Skyeler&#39;s Blog</title>
-    <link>http://localhost:1313/posts/musings/</link>
+    <link>http://localhost:1313/personal-blog/posts/musings/</link>
     <description>Recent content in musings on Skyeler&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
     <lastBuildDate>Sat, 26 Jul 2025 23:08:32 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/musings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/personal-blog/posts/musings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pirate speak</title>
-      <link>http://localhost:1313/posts/musings/pirate_speak/</link>
+      <link>http://localhost:1313/personal-blog/posts/musings/pirate_speak/</link>
       <pubDate>Sat, 26 Jul 2025 23:08:32 -0400</pubDate>
-      <guid>http://localhost:1313/posts/musings/pirate_speak/</guid>
+      <guid>http://localhost:1313/personal-blog/posts/musings/pirate_speak/</guid>
       <description>&lt;h1 id=&#34;lets-bring-back-pirate-speak&#34;&gt;Let&amp;rsquo;s bring back pirate speak&lt;/h1&gt;&#xA;&lt;h3 id=&#34;tldr-replace-my-with-me-myself-with-meself-and-hello-with-ahoy&#34;&gt;TL;DR: Replace &lt;code&gt;my&lt;/code&gt; with &lt;code&gt;me&lt;/code&gt;, &lt;code&gt;myself&lt;/code&gt; with &lt;code&gt;meself&lt;/code&gt;, and &lt;code&gt;hello&lt;/code&gt; with &lt;code&gt;ahoy&lt;/code&gt;.&lt;/h3&gt;&#xA;&lt;p&gt;Recently, I&amp;rsquo;ve been trying to bring back pirate-speak. The whimsical, old-timey, flamboyant way that pirates in movies and tv shows talk (note: this has absolutely 0 basis in any real history or documented literature).&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Ahoy, matey! Shiver me timbers and lead me to some booty.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;I think it would be cool. Some people have catch phrases (e.g. calling someone &amp;lsquo;boss&amp;rsquo;, saying &amp;lsquo;what the helly&amp;rsquo;, etc.) and I think I&amp;rsquo;m going to make pirate speak mine.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/musings/my-first-post/</link>
+      <link>http://localhost:1313/personal-blog/posts/musings/my-first-post/</link>
       <pubDate>Fri, 25 Jul 2025 14:00:23 -0400</pubDate>
-      <guid>http://localhost:1313/posts/musings/my-first-post/</guid>
+      <guid>http://localhost:1313/personal-blog/posts/musings/my-first-post/</guid>
       <description>&lt;h1 id=&#34;my-first-post&#34;&gt;My first post&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m following along with the &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Hugo Demo&lt;/a&gt; so that I can set up a blog. I don&amp;rsquo;t really have anything that interesting to say but I think it would be nice to have a place to keep some thoughts, doodles, and opinions. I read a lot of books and watch a lot of TV and have many thoughts on these. I&amp;rsquo;m also going to try and read more papers now that I&amp;rsquo;m done with grad school, so that my brain doesn&amp;rsquo;t fully atrophy. It would be nice to have a place for my thoughts and notes on that.&lt;/p&gt;</description>
     </item>
   </channel>
