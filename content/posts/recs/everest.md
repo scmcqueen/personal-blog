@@ -2,7 +2,7 @@
 date = '2025-07-28T16:21:20-04:00'
 draft = false
 title = 'Everest Sherpa Restaurant'
-tags = ['Ann Arbor']
+tags = ['AnnArbor']
 +++
 
 # Everest Sherpa Restaurant

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>recs on Skyeler&#39;s Blog</title>
-    <link>http://localhost:1313/personal-blog/posts/recs/</link>
-    <description>Recent content in recs on Skyeler&#39;s Blog</description>
+    <title>AnnArbor on Skyeler&#39;s Blog</title>
+    <link>http://localhost:1313/personal-blog/blog/annarbor/</link>
+    <description>Recent content in AnnArbor on Skyeler&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
     <lastBuildDate>Mon, 28 Jul 2025 16:21:20 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/personal-blog/posts/recs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/personal-blog/blog/annarbor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Everest Sherpa Restaurant</title>
       <link>http://localhost:1313/personal-blog/posts/recs/everest/</link>
