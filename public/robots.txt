@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://localhost:1313/personal-blog/sitemap.xml
+Sitemap: https://scmcqueen.github.io/personal-blog/sitemap.xml

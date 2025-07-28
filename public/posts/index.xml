@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Skyeler&#39;s Blog</title>
-    <link>http://localhost:1313/personal-blog/posts/</link>
+    <link>https://scmcqueen.github.io/personal-blog/posts/</link>
     <description>Recent content in Posts on Skyeler&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/personal-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://scmcqueen.github.io/personal-blog/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

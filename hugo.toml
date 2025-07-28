@@ -65,3 +65,13 @@ ignoreErrors = ["error-disable-taxonomy"]
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# adding this for images
+# https://discourse.gohugo.io/t/how-to-add-image-to-hugo-with-local-and-remote/41391/4
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'
