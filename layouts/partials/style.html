@@ -4,7 +4,7 @@
         --font-main: Verdana, sans-serif;
         --font-funky: 'Playfair Display', serif;
         --font-secondary: Verdana, sans-serif;
-        --font-scale: 1em;
+        --font-scale: .8em;
         --background-color: #F2F9FF;
         --heading-color: #E85D75;
         --text-color: #081C2D;
@@ -72,8 +72,34 @@
         text-decoration: underline;
     }
 
+
+    nav {
+        max-width: 1000px;
+        min-width: 400px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
     nav a {
-        margin-right: 8px;
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+        background-color: #081C2D;
+        color: #F2F9FF;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    nav a:hover {
+        opacity: .95;
+        text-decoration: none;
+        /* did this instead of opacity bc background color */
+        background-color: #F2F9FF;
+        color: #081C2D;
     }
 
     strong,
