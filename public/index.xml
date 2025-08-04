@@ -2,32 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>home on Skyeler&#39;s Blog</title>
-    <link>https://scmcqueen.github.io/personal-blog/</link>
+    <link>http://localhost:1313/personal-blog/</link>
     <description>Recent content in home on Skyeler&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
-    <lastBuildDate>Mon, 28 Jul 2025 16:21:20 -0400</lastBuildDate>
-    <atom:link href="https://scmcqueen.github.io/personal-blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Aug 2025 16:57:54 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/personal-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Hale Theater</title>
+      <link>http://localhost:1313/personal-blog/posts/reviews/thehale/</link>
+      <pubDate>Sun, 03 Aug 2025 16:57:54 -0700</pubDate>
+      <guid>http://localhost:1313/personal-blog/posts/reviews/thehale/</guid>
+      <description>&lt;h1 id=&#34;the-hale-theater&#34;&gt;The Hale Theater&lt;/h1&gt;&#xA;&lt;h2 id=&#34;salt-lake-cityish-utah&#34;&gt;Salt Lake City(ish), Utah&lt;/h2&gt;&#xA;&lt;p&gt;(Okay actually the theater is in Sandy but close enough)&lt;/p&gt;&#xA;&lt;p&gt;This past week, my lovely mother-in-law got us tickets to see &lt;a href=&#34;https://www.hct.org/Online/default.asp?BOparam::WScontent::loadArticle::permalink=Footloose&amp;amp;BOparam::WScontent::loadArticle::context_id=&#34;&gt;&amp;ldquo;Footloose: The Musical&lt;/a&gt; at the &lt;a href=&#34;https://www.hct.org/Online/default.asp&#34;&gt;Hale Theater&lt;/a&gt;. Sam &amp;amp; his family all love shows and music, but we never see shows because I personally am a bum and a little but of a musical theater hater. I was quite pleasantly surprised though! I ended up enjoying the show a lot more than I thought I would. I don&amp;rsquo;t feel qualified to comment on the quality of the performers (I thought they were really good! but I don&amp;rsquo;t have much specific feedback aside from loving the girl who played Rusty). BUT! What you may forget is that I received &lt;em&gt;my varsity letter in Theater Tech at Wylie E Groves High School&lt;/em&gt;. Hence, I have some thoughts about the technical aspects of the show: the style of theater, the set, and the screens.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Everest Sherpa Restaurant</title>
-      <link>https://scmcqueen.github.io/personal-blog/posts/recs/everest/</link>
+      <link>http://localhost:1313/personal-blog/posts/recs/everest/</link>
       <pubDate>Mon, 28 Jul 2025 16:21:20 -0400</pubDate>
-      <guid>https://scmcqueen.github.io/personal-blog/posts/recs/everest/</guid>
+      <guid>http://localhost:1313/personal-blog/posts/recs/everest/</guid>
       <description>&lt;h1 id=&#34;everest-sherpa-restaurant&#34;&gt;Everest Sherpa Restaurant&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.everestsherparestaurant.com/&#34;&gt;https://www.everestsherparestaurant.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ann Arbor, Michigan&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re going to Ann Arbor for a weekend, I would 100% recommend Everest Sherpa Restaurant. Away from downtown A2, Everest Sherpa is by a Target and (RIP) Joanne&amp;rsquo;s fabric in a strip mall. It is probably my favorite restaurant in the city. Their summer specials have all changed my life for the better.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dal Makhani (special): a creamy, savory delicious dish that haunts my dreams&lt;/li&gt;&#xA;&lt;li&gt;Vegetable Momos: the best dumplings in the world. Always a treat!!&lt;/li&gt;&#xA;&lt;li&gt;Chili Momos (special): The amazing momos but somehow even better?? A sweet &amp;amp; spicy chili sauce that is truly incredible.&lt;/li&gt;&#xA;&lt;li&gt;Coconut Tofu Curry (special): Light, creamy, airy delicious coconut curry that I CRAVE like nothing else. So incredible.&lt;/li&gt;&#xA;&lt;li&gt;Mango Lassi: I just always love mango lassi but this one is particularly delicious.&lt;/li&gt;&#xA;&lt;li&gt;Masala Mint Lemonade: This lemonade is POWERFUL. It&amp;rsquo;s spicy and sweet in all the best ways.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If you like meat I think Sam had the tandoori chicken and it looked really good (I think?) and he also loves the chicken tikka masala (white people classic).&lt;/p&gt;</description>
     </item>
     <item>
       <title>pirate speak</title>
-      <link>https://scmcqueen.github.io/personal-blog/posts/musings/pirate_speak/</link>
+      <link>http://localhost:1313/personal-blog/posts/musings/pirate_speak/</link>
       <pubDate>Sat, 26 Jul 2025 23:08:32 -0400</pubDate>
-      <guid>https://scmcqueen.github.io/personal-blog/posts/musings/pirate_speak/</guid>
+      <guid>http://localhost:1313/personal-blog/posts/musings/pirate_speak/</guid>
       <description>&lt;h1 id=&#34;lets-bring-back-pirate-speak&#34;&gt;Let&amp;rsquo;s bring back pirate speak&lt;/h1&gt;&#xA;&lt;h3 id=&#34;tldr-replace-my-with-me-myself-with-meself-and-hello-with-ahoy&#34;&gt;TL;DR: Replace &lt;code&gt;my&lt;/code&gt; with &lt;code&gt;me&lt;/code&gt;, &lt;code&gt;myself&lt;/code&gt; with &lt;code&gt;meself&lt;/code&gt;, and &lt;code&gt;hello&lt;/code&gt; with &lt;code&gt;ahoy&lt;/code&gt;.&lt;/h3&gt;&#xA;&lt;p&gt;Recently, I&amp;rsquo;ve been trying to bring back pirate-speak. The whimsical, old-timey, flamboyant way that pirates in movies and tv shows talk (note: this has absolutely 0 basis in any real history or documented literature).&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Ahoy, matey! Shiver me timbers and lead me to some booty.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;I think it would be cool. Some people have catch phrases (e.g. calling someone &amp;lsquo;boss&amp;rsquo;, saying &amp;lsquo;what the helly&amp;rsquo;, etc.) and I think I&amp;rsquo;m going to make pirate speak mine.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>https://scmcqueen.github.io/personal-blog/posts/musings/my-first-post/</link>
+      <link>http://localhost:1313/personal-blog/posts/musings/my-first-post/</link>
       <pubDate>Fri, 25 Jul 2025 14:00:23 -0400</pubDate>
-      <guid>https://scmcqueen.github.io/personal-blog/posts/musings/my-first-post/</guid>
+      <guid>http://localhost:1313/personal-blog/posts/musings/my-first-post/</guid>
       <description>&lt;h1 id=&#34;my-first-post&#34;&gt;My first post&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m following along with the &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;Hugo Demo&lt;/a&gt; so that I can set up a blog. I don&amp;rsquo;t really have anything that interesting to say but I think it would be nice to have a place to keep some thoughts, doodles, and opinions. I read a lot of books and watch a lot of TV and have many thoughts on these. I&amp;rsquo;m also going to try and read more papers now that I&amp;rsquo;m done with grad school, so that my brain doesn&amp;rsquo;t fully atrophy. It would be nice to have a place for my thoughts and notes on that.&lt;/p&gt;</description>
     </item>
   </channel>
