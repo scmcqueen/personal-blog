@@ -6,8 +6,8 @@ baseURL = "https://scmcqueen.github.io/personal-blog/"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "Skyeler's Blog"
-author = "Skyeler S. C. McQueen"
+title = "Skyeler C. S. McQueen"
+author = "Skyeler C. S. McQueen"
 copyright = "Copyright © 2025, Skyeler McQueen."
 languageCode = "en-US"
 

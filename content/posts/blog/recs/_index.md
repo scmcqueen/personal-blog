@@ -1,5 +1,5 @@
 +++
 title = "recs"
-menu = "main"
+menu = "second"
 weight = 100
 +++

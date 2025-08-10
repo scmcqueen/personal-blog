@@ -1,5 +1,5 @@
 +++
 title = "reviews"
-menu = "main"
+menu = "second"
 weight = 100
 +++

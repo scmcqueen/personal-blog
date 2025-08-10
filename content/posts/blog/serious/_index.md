@@ -1,5 +1,5 @@
 +++
 title = "serious"
-menu = "main"
+menu = "second"
 weight = 100
 +++

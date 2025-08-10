@@ -3,18 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/personal-blog/</loc>
+    <lastmod>2025-08-09T22:02:31-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal-blog/projects/</loc>
+    <lastmod>2025-08-09T22:02:31-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal-blog/posts/blog/</loc>
     <lastmod>2025-08-03T16:57:54-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/reviews/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/reviews/</loc>
     <lastmod>2025-08-03T16:57:54-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/recs/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/recs/</loc>
     <lastmod>2025-07-28T16:21:20-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/musings/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/musings/</loc>
     <lastmod>2025-07-26T23:08:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/serious/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/serious/</loc>
+  </url><url>
+    <loc>http://localhost:1313/personal-blog/projects/nlp/</loc>
+    <lastmod>2025-08-09T22:02:31-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal-blog/posts/</loc>
     <lastmod>2025-08-03T16:57:54-07:00</lastmod>
@@ -22,7 +31,7 @@
     <loc>http://localhost:1313/personal-blog/blog/saltlakecity/</loc>
     <lastmod>2025-08-03T16:57:54-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/reviews/thehale/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/reviews/thehale/</loc>
     <lastmod>2025-08-03T16:57:54-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal-blog/blog/theater/</loc>
@@ -31,16 +40,16 @@
     <loc>http://localhost:1313/personal-blog/blog/annarbor/</loc>
     <lastmod>2025-07-28T16:21:20-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/recs/everest/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/recs/everest/</loc>
     <lastmod>2025-07-28T16:21:20-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal-blog/blog/linguistics/</loc>
     <lastmod>2025-07-26T23:08:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/musings/pirate_speak/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/musings/pirate_speak/</loc>
     <lastmod>2025-07-26T23:08:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal-blog/posts/musings/my-first-post/</loc>
+    <loc>http://localhost:1313/personal-blog/posts/blog/musings/my-first-post/</loc>
     <lastmod>2025-07-25T14:00:23-04:00</lastmod>
   </url>
 </urlset>

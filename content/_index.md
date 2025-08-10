@@ -4,22 +4,12 @@ menu = "main"
 weight = 1
 +++
 
-# Welcome to my blog
+## Data Scientist, Problem Solver, Crocheter
 
-Hello! It's me. Here is my space where I want to share my thoughts & feelings about a variety of different things. 
+Hello! I'm Skyeler, a product data scientist at Meta and general data nerd. I did my undergrad at Cornell in theoretical math & german studies (Go Big Red!) and did my masters at University of Michigan (Go Blue!).
 
-## Musings
+I'm passionate about data visualization, trend analysis, and networks.
 
-Thoughts about life, pop culture, and other things.
+[github](https://github.com/scmcqueen)
 
-## Reviews
-
-I watch a lot of movies, read a lot of books, and binge watch Love Island like it's a full time job. I'm obviously going to have opinions.
-
-## Serious Stuff
-
-As I transition from graduate school to working full-time as a data scientist, I want to stay up-to-date on the latest papers and books. This is the spot where I'll keep you updated on my DS readings and (maybe) some cheeky projects!
-
-## Recs
-
-Visiting Ann Arbor? San Mateo? Charlevoix County? Hemet? I got you.
+[linkedin](https://www.linkedin.com/in/skyelermcqueen/)
