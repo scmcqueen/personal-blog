@@ -5,6 +5,8 @@ title = 'Book Review: Strange Beasts of China by Yan Ge'
 tags = ['Books','Fantasy']
 +++
 
+## *Strange Beasts of China* by Yan Ge
+
 I feel like I've been reading a lot of 5 star books recently. I picked up *Strange Beasts of China* after seeing it at a tiny bookstore in Murphys, CA ([Books on Main](https://share.google/o4mTZBBraYcRXFRxk)!). I liked the moon cover, with its extra-terrestrial hue. I thought this would be a scifi novel, but instead it was a fantastical epic about the city of Yong'an.
 
 {{< figure src="https://cdn.thestorygraph.com/9k22cpehpajdjxp4hjl8p0n6h2wy" alt="Cover of Strange Beasts of China" width="300" >}}
