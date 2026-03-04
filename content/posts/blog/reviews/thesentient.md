@@ -1,5 +1,5 @@
 +++
-date = '2026-02-16T18:11:40-08:00'
+date = '2026-02-08T18:11:40-08:00'
 draft = false
 title = 'Book Review: The Sentient by Nadia Afifi'
 tags = ['Books','SciFi']
