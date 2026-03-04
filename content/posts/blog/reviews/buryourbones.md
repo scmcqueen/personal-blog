@@ -5,7 +5,7 @@ title = 'Book Review: Bury Our Bones in the Midnight Soil by V.E. Schwab'
 tags = ['Books','Fantasy','Historical']
 +++
 
-## *Bury Our Bones in the Midnight Soil* by V.E. Schwab
+# *Bury Our Bones in the Midnight Soil* by V.E. Schwab
 
 A book I couldn't put down. A book that had me shaking my mouse all day so my work laptop thinks I'm in 'focus mode'. A book I described to Sam before bed just so I could talk to someone about it.
 

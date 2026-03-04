@@ -5,7 +5,7 @@ title = 'Book Review: Translation State by Ann Leckie'
 tags = ['Books','SciFi']
 +++
 
-## *Translation State* by Ann Leckie
+# *Translation State* by Ann Leckie
 
 Ann Leckie's *Translation State* isn't all a love story. But in some ways, it is pretty damn close. It's the story of a woman who finds herself and experiences adventure after a lifetime of quietude and domineering family. Two young(-ish) people, searching for meaning and acceptance. Trying to understand where the belong and who they want to be.
 *and all in space!!*

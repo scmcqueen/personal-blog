@@ -5,7 +5,7 @@ title = 'Book Review: Ancillary Mercy by Ann Leckie'
 tags = ['Books','SciFi']
 +++
 
-## *Ancillary Mercy* by Ann Leckie
+# *Ancillary Mercy* by Ann Leckie
 ### The final book in the *Imperial Radch* Trilogy
 
 I read this book in a bout of depression about my life and my job and it consumed me. I loved *Ancillary Mercy* with all my heart. This was the perfect ending to the trilogy. It was an ending that made me think "Of course this was the natural outcome, how did I not guess this in the first book?". Exactly what I needed.

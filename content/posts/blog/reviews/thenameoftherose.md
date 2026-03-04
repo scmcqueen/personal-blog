@@ -5,7 +5,7 @@ title = 'Book Review: The Name of the Rose by Umberto Eco'
 tags = ['Books','Mystery','Medieval']
 +++
 
-## *The Name of the Rose* by Umberto Eco
+# *The Name of the Rose* by Umberto Eco
 
 #### "Books are not made to be believed but to be subjected to inquiry."
 

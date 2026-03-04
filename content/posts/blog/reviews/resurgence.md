@@ -5,7 +5,7 @@ title = 'Book Review: Resurgence by C.J. Cherryh'
 tags = ['Books','SciFi']
 +++
 
-## *Resurgence* by C.J. Cherryh
+# *Resurgence* by C.J. Cherryh
 
 Do you ever pick up a book and realize it is 20th in a long series? That is how I ended up picking *Resurgence*. What the fuck.
 

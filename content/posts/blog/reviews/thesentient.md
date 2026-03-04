@@ -5,7 +5,7 @@ title = 'Book Review: The Sentient by Nadia Afifi'
 tags = ['Books','SciFi']
 +++
 
-## *The Sentient* by Nadia Afifi
+# *The Sentient* by Nadia Afifi
 
 Am I old? Am I a curmudgeon? Nadia Afifi's *The Sentien*t is a book about people approximately my age who just finished grad school (just like me!) but somehow I felt 100x older than them. This book is paced like a YA book in a strangely unrealistic way to me. I feel like I'm now a boring person because I'm not as interested in unrealistically successful action scenes e.g. Amira immediately stealing a top secret medicine with absolutely no trouble and a plot that moves faster than Lightning McQueen (*kachow*). Amira is supposed to be in her mid-twenties but her decision making & her friendships feel so immature to me. Was it originally supposed to be about teenagers? That would make way more sense to me.
 
