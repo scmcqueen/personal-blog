@@ -11,8 +11,6 @@ tags = ['Books','Mystery','Medieval']
 
 This book was a treat. A pleasure. A read that challenged me, made me re-read portions, google translate latin, & look up the [Hibernian monks](https://en.wikipedia.org/wiki/Hiberno-Scottish_mission). This is exactly what a murder mystery should be: an erudite investigator, relatable narrator, mythology, and beautiful setting. Something is afoot in the monastery...
 
-{{< figure src="https://cdn.thestorygraph.com/eiwptvx9o98y74h080cycn6e9zao" alt="Cover of The Name of The Rose" width="300" >}}
-
 
 I loved William of Baskerville. How else could a man of science and reason live life in this time? Only a monk could have this freedom, to reason and travel and think. So much of this book went over my head but at the same time, i felt moved by it. There was no mastermind or evil villain. There was one corrupted old man, one jar of poison, and thirsty men, lusting for knowledge, sex, and power. What's new? This is the real world, one of an inspector that's too late and a library that burns.
 
@@ -33,3 +31,5 @@ I could say so much more, how I loved the vivid descriptions of the doors, how t
 
 
 I literally listened to *[Sederunt principes](https://youtu.be/b4oo4e7PK48?si=kFWrFnsgPlkTr4G4)* (The Hilliard Ensemble on Spotify is fire) because this book was so good. 
+
+{{< figure src="https://cdn.thestorygraph.com/eiwptvx9o98y74h080cycn6e9zao" alt="Cover of The Name of The Rose" width="300" >}}
