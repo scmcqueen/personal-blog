@@ -1,6 +1,6 @@
 +++
-date = '2026-03-03T21:34:40-08:00'
-draft = true
+date = '2026-02-02T21:34:40-08:00'
+draft = false
 title = 'Book Review: Ancillary Mercy by Ann Leckie'
 tags = ['Books','SciFi']
 +++
