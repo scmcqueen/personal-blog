@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-03T21:34:40-08:00</lastmod>
+    <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-05-04T22:02:31-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/</loc>
-    <lastmod>2026-03-03T21:34:40-08:00</lastmod>
+    <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/reviews/</loc>
-    <lastmod>2026-03-03T21:34:40-08:00</lastmod>
+    <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/recs/</loc>
     <lastmod>2025-07-28T16:21:20-04:00</lastmod>
@@ -22,13 +22,7 @@
   </url><url>
     <loc>http://localhost:1313/posts/blog/serious/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-03-03T21:34:40-08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/blog/reviews/strangebeasts/</loc>
-    <lastmod>2026-02-16T18:11:40-08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/blog/reviews/thesentient/</loc>
     <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/books/</loc>
@@ -37,14 +31,35 @@
     <loc>http://localhost:1313/blog/fantasy/</loc>
     <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/scifi/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/reviews/provenance/</loc>
     <lastmod>2026-02-14T21:20:04-08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/scifi/</loc>
+    <lastmod>2026-02-14T21:20:04-08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/blog/reviews/translationstate/</loc>
     <lastmod>2026-02-12T19:29:03-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/reviews/thesentient/</loc>
+    <lastmod>2026-02-08T18:11:40-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/reviews/ancillarymercy/</loc>
+    <lastmod>2026-02-02T21:34:40-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/reviews/thenameoftherose/</loc>
+    <lastmod>2026-02-01T18:11:40-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/medieval/</loc>
+    <lastmod>2026-02-01T18:11:40-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/mystery/</loc>
+    <lastmod>2026-02-01T18:11:40-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/reviews/resurgence/</loc>
+    <lastmod>2026-01-27T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/saltlakecity/</loc>
     <lastmod>2025-08-03T16:57:54-07:00</lastmod>
