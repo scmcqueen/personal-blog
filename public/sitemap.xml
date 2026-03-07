@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-01T19:29:03-08:00</lastmod>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-05-04T22:02:31-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/</loc>
-    <lastmod>2026-03-01T19:29:03-08:00</lastmod>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/</loc>
-    <lastmod>2026-03-01T19:29:03-08:00</lastmod>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/recs/</loc>
     <lastmod>2025-07-28T16:21:20-04:00</lastmod>
@@ -22,19 +22,25 @@
   </url><url>
     <loc>http://localhost:1313/posts/blog/serious/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/blog/bookreviewsplus/americanzion/</loc>
-    <lastmod>2026-03-01T19:29:03-08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/books/</loc>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/bookreviewsplus/gravitylost/</loc>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/scifi/</loc>
+    <lastmod>2026-03-06T21:27:03-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/bookreviewsplus/americanzion/</loc>
     <lastmod>2026-03-01T19:29:03-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/history/</loc>
     <lastmod>2026-03-01T19:29:03-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/nonfiction/</loc>
-    <lastmod>2026-03-01T19:29:03-08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-03-01T19:29:03-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/strangebeasts/</loc>
@@ -44,9 +50,6 @@
     <lastmod>2026-02-16T18:11:40-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/provenance/</loc>
-    <lastmod>2026-02-14T21:20:04-08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/scifi/</loc>
     <lastmod>2026-02-14T21:20:04-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/translationstate/</loc>
