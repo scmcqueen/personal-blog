@@ -48,4 +48,6 @@ I hope that we can do it.
 
 Except Raahul really wants the slightly apocalyptic future. He really wants Cyberpunk 2077 IRL. He needs that cybernetic appendix.
 
+And once again... to be cringe... I will recommend Dr. Greg Epstein's [reddit AMA](https://www.reddit.com/r/IAmA/comments/1i7c9pk/im_greg_epstein_the_humanist_chaplain_for_mit_and/). I enjoyed reading his thoughts on climate change, doomerism, and the athiest/agnostic label (which he also touches on in the book).
+
 {{< figure src="https://cdn.thestorygraph.com/7ahvmbchq1xytj2iy9x4mtzasq7g" alt="Cover of Tech Agnostic" width="300" >}}
