@@ -1,5 +1,5 @@
 +++
-date = '2026-03-21T19:29:03-08:00'
+date = '2026-03-20T19:29:03-08:00'
 draft = false
 title = 'Book Review: Tech Agnostic by Greg Epstein'
 tags = ['Books','Nonfiction','Tech']
