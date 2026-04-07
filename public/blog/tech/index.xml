@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on Skyeler C. S. McQueen</title>
-    <link>http://localhost:1313/blog/tech/</link>
+    <link>https://skyelermcqueen.com/blog/tech/</link>
     <description>Recent content in Tech on Skyeler C. S. McQueen</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
     <lastBuildDate>Fri, 20 Mar 2026 19:29:03 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://skyelermcqueen.com/blog/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Review: Tech Agnostic by Greg Epstein</title>
-      <link>http://localhost:1313/posts/blog/bookreviewsplus/techagnostic/</link>
+      <link>https://skyelermcqueen.com/posts/blog/bookreviewsplus/techagnostic/</link>
       <pubDate>Fri, 20 Mar 2026 19:29:03 -0800</pubDate>
-      <guid>http://localhost:1313/posts/blog/bookreviewsplus/techagnostic/</guid>
+      <guid>https://skyelermcqueen.com/posts/blog/bookreviewsplus/techagnostic/</guid>
       <description>&lt;h1 id=&#34;tech-agnostic&#34;&gt;&lt;em&gt;Tech Agnostic:&lt;/em&gt;&lt;/h1&gt;&#xA;&lt;h3 id=&#34;how-technology-became-the-world&#34;&gt;&lt;em&gt;How Technology Became the World&amp;rsquo;s Most Powerful Religion, and Why It Desperately Needs a Reformation&lt;/em&gt;&lt;/h3&gt;&#xA;&lt;h1 id=&#34;by-greg-epstein&#34;&gt;by Greg Epstein&lt;/h1&gt;&#xA;&lt;p&gt;I always feel brave when I read non-fiction. I usually prefer something that takes me away from tech (&lt;em&gt;my job!&lt;/em&gt;) and doesn&amp;rsquo;t mention the name of the company I work for (&lt;em&gt;womp!&lt;/em&gt;). But in my ill-fated quest to better myself as a person and expand my mind, I decided to pick up &lt;em&gt;Tech Agnostic&lt;/em&gt;. This felt like a natural expansion of my previous read (&lt;em&gt;American Zion&lt;/em&gt; by Dr. Benjamin Park, the delightful book on the history of the LDS faith): &lt;strong&gt;Has tech become a religion in the modern age?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
