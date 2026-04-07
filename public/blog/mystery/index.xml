@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mystery on Skyeler C. S. McQueen</title>
-    <link>https://skyelermcqueen.com/blog/mystery/</link>
+    <link>http://localhost:1313/blog/mystery/</link>
     <description>Recent content in Mystery on Skyeler C. S. McQueen</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
-    <lastBuildDate>Sun, 01 Feb 2026 18:11:40 -0800</lastBuildDate>
-    <atom:link href="https://skyelermcqueen.com/blog/mystery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Mar 2026 21:28:57 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/mystery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Review: Murder by Memory by Olivia Waite</title>
+      <link>http://localhost:1313/posts/blog/bookreviewsplus/deathbymemory/</link>
+      <pubDate>Mon, 23 Mar 2026 21:28:57 -0700</pubDate>
+      <guid>http://localhost:1313/posts/blog/bookreviewsplus/deathbymemory/</guid>
+      <description>&lt;h1 id=&#34;murder-by-memory-by-olivia-waite&#34;&gt;&lt;em&gt;Murder by Memory&lt;/em&gt; by Olivia Waite&lt;/h1&gt;&#xA;&lt;p&gt;I was very pleasantly surprised by &lt;em&gt;Murder by Memory&lt;/em&gt;. This was another random San Mateo County Library pick - the scifi library on the cover caught my eye! Two of my favorite things! Libraries! And space! And the length of the book was just what I needed. I was in the mood for something short and sweet.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Murder by Memory&lt;/em&gt; offers us a universe where humanity has escaped planet Earth &amp;amp; is on route to a new home planet. But along the way, on the lightyears long interstellar journey, people are temporarily allowed immortality (just until they reach the next planet, of course). Their memories are source-controlled into a library and the RAM is physically shelved. When you die, all you need to do is 3d print a new body &amp;amp; re-upload your last copy. Sure, you may lose a few hours. But what&amp;rsquo;s a few hours in the grand scheme of an interstellar journey? There&amp;rsquo;s seemingly endless time, centuries of drama, and very (little) death.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Book Review: The Name of the Rose by Umberto Eco</title>
-      <link>https://skyelermcqueen.com/posts/blog/bookreviewsplus/thenameoftherose/</link>
+      <link>http://localhost:1313/posts/blog/bookreviewsplus/thenameoftherose/</link>
       <pubDate>Sun, 01 Feb 2026 18:11:40 -0800</pubDate>
-      <guid>https://skyelermcqueen.com/posts/blog/bookreviewsplus/thenameoftherose/</guid>
+      <guid>http://localhost:1313/posts/blog/bookreviewsplus/thenameoftherose/</guid>
       <description>&lt;h1 id=&#34;the-name-of-the-rose-by-umberto-eco&#34;&gt;&lt;em&gt;The Name of the Rose&lt;/em&gt; by Umberto Eco&lt;/h1&gt;&#xA;&lt;h4 id=&#34;books-are-not-made-to-be-believed-but-to-be-subjected-to-inquiry&#34;&gt;&amp;ldquo;Books are not made to be believed but to be subjected to inquiry.&amp;rdquo;&lt;/h4&gt;&#xA;&lt;p&gt;This book was a treat. A pleasure. A read that challenged me, made me re-read portions, google translate latin, &amp;amp; look up the &lt;a href=&#34;https://en.wikipedia.org/wiki/Hiberno-Scottish_mission&#34;&gt;Hibernian monks&lt;/a&gt;. This is exactly what a murder mystery should be: an erudite investigator, relatable narrator, mythology, and beautiful setting. Something is afoot in the monastery&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I loved William of Baskerville. How else could a man of science and reason live life in this time? Only a monk could have this freedom, to reason and travel and think. So much of this book went over my head but at the same time, i felt moved by it. There was no mastermind or evil villain. There was one corrupted old man, one jar of poison, and thirsty men, lusting for knowledge, sex, and power. What&amp;rsquo;s new? This is the real world, one of an inspector that&amp;rsquo;s too late and a library that burns.&lt;/p&gt;</description>
     </item>
   </channel>
