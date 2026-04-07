@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Romance on Skyeler C. S. McQueen</title>
-    <link>https://skyelermcqueen.com/blog/romance/</link>
+    <link>http://localhost:1313/blog/romance/</link>
     <description>Recent content in Romance on Skyeler C. S. McQueen</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
     <lastBuildDate>Fri, 27 Mar 2026 21:39:38 -0700</lastBuildDate>
-    <atom:link href="https://skyelermcqueen.com/blog/romance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/romance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Review: Agnes Aubert&#39;s Mystical Cat Shelter by Heather Fawcett</title>
-      <link>https://skyelermcqueen.com/posts/blog/bookreviewsplus/agnesaubertcatshelter/</link>
+      <link>http://localhost:1313/posts/blog/bookreviewsplus/agnesaubertcatshelter/</link>
       <pubDate>Fri, 27 Mar 2026 21:39:38 -0700</pubDate>
-      <guid>https://skyelermcqueen.com/posts/blog/bookreviewsplus/agnesaubertcatshelter/</guid>
+      <guid>http://localhost:1313/posts/blog/bookreviewsplus/agnesaubertcatshelter/</guid>
       <description>&lt;h1 id=&#34;agnes-aubert-by-heather-fawcett&#34;&gt;&lt;em&gt;Agnes Aubert&amp;rsquo;s Mystical Cat Shelter&lt;/em&gt; by Heather Fawcett&lt;/h1&gt;&#xA;&lt;p&gt;Reading &lt;em&gt;Agnes Aubert&amp;rsquo;s Mystical Cat Shelter&lt;/em&gt; was sipping a decadent cinnamon hot chocolate topped with heavy, homemade vanilla whipped cream. It was light and fluffy, yet warmed my soul with its rich, spicy depths. The cold streets of Montreal in winter glow by magic and compassion: I imagined the city as bathed in golden light from old street lamps. I remembered how magical (&amp;amp; European!) Montreal felt to me many years ago when I spent a few chilly February days there.&lt;/p&gt;</description>
     </item>
   </channel>

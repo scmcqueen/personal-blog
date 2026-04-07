@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Noir on Skyeler C. S. McQueen</title>
-    <link>https://skyelermcqueen.com/blog/noir/</link>
+    <link>http://localhost:1313/blog/noir/</link>
     <description>Recent content in Noir on Skyeler C. S. McQueen</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
     <lastBuildDate>Mon, 23 Mar 2026 21:28:57 -0700</lastBuildDate>
-    <atom:link href="https://skyelermcqueen.com/blog/noir/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/noir/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Review: Murder by Memory by Olivia Waite</title>
-      <link>https://skyelermcqueen.com/posts/blog/bookreviewsplus/deathbymemory/</link>
+      <link>http://localhost:1313/posts/blog/bookreviewsplus/deathbymemory/</link>
       <pubDate>Mon, 23 Mar 2026 21:28:57 -0700</pubDate>
-      <guid>https://skyelermcqueen.com/posts/blog/bookreviewsplus/deathbymemory/</guid>
+      <guid>http://localhost:1313/posts/blog/bookreviewsplus/deathbymemory/</guid>
       <description>&lt;h1 id=&#34;murder-by-memory-by-olivia-waite&#34;&gt;&lt;em&gt;Murder by Memory&lt;/em&gt; by Olivia Waite&lt;/h1&gt;&#xA;&lt;p&gt;I was very pleasantly surprised by &lt;em&gt;Murder by Memory&lt;/em&gt;. This was another random San Mateo County Library pick - the scifi library on the cover caught my eye! Two of my favorite things! Libraries! And space! And the length of the book was just what I needed. I was in the mood for something short and sweet.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Murder by Memory&lt;/em&gt; offers us a universe where humanity has escaped planet Earth &amp;amp; is on route to a new home planet. But along the way, on the lightyears long interstellar journey, people are temporarily allowed immortality (just until they reach the next planet, of course). Their memories are source-controlled into a library and the RAM is physically shelved. When you die, all you need to do is 3d print a new body &amp;amp; re-upload your last copy. Sure, you may lose a few hours. But what&amp;rsquo;s a few hours in the grand scheme of an interstellar journey? There&amp;rsquo;s seemingly endless time, centuries of drama, and very (little) death.&lt;/p&gt;</description>
     </item>
   </channel>
