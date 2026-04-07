@@ -2,7 +2,7 @@
 date = '2026-02-01T18:11:40-08:00'
 draft = false
 title = 'Book Review: The Name of the Rose by Umberto Eco'
-tags = ['Books','Mystery','Medieval']
+tags = ['Books','Mystery','Medieval','Historical']
 +++
 
 # *The Name of the Rose* by Umberto Eco
