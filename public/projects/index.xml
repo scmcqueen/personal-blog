@@ -7,7 +7,14 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Skyeler McQueen.</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2024 22:41:35 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mining the National Parks: Applying Data Mining Techniques to National Park Service Visitor Statistics</title>
+      <link>http://localhost:1313/projects/mining_the_national_parks/</link>
+      <pubDate>Wed, 04 Dec 2024 22:41:35 -0700</pubDate>
+      <guid>http://localhost:1313/projects/mining_the_national_parks/</guid>
+      <description>&lt;h1 id=&#34;mining-the-national-parks&#34;&gt;Mining the National Parks:&lt;/h1&gt;&#xA;&lt;h2 id=&#34;applying-data-mining-techniques-to-national-park-service-visitor-statistics&#34;&gt;Applying Data Mining Techniques to National Park Service Visitor Statistics&lt;/h2&gt;&#xA;&lt;p&gt;December 2024, For Data Mining SI 671&lt;/p&gt;&#xA;&lt;p&gt;Github Project: &lt;a href=&#34;https://github.com/scmcqueen/NationalParksDataMining&#34;&gt;Mining the National Parks: Applying Data Mining Techniques to National Park Service Visitor Statistics&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;&#xA;&lt;p&gt;In this project, we apply data mining techniques like Dynamic Time Warping, seasonal component extraction, ARIMA, and network analysis to United States National Park Data. We found that states in the same region tend to have similar seasonal visitation patterns, but so do states that are geographically near each other but in different regions. This suggests that region is not necessarily the most powerful tool for grouping states. Through a network analysis of park type distribution similarity, we found that states in the Northeast have the highest pagerank and clustering on average, meaning that they are the most similar. Our analyses of Covid-19 and the 2008 pandemic have shown us that these global events likely had significant impacts on the National Parks recreational visitor rates. This data can inform planning for the National Park Service&amp;rsquo;s seasonal worker hiring and permit distribution.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
