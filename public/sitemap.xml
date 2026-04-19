@@ -3,13 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-16T23:28:48-07:00</lastmod>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-12-04T22:41:35-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/</loc>
-    <lastmod>2026-04-16T23:28:48-07:00</lastmod>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/recs/</loc>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/</loc>
     <lastmod>2026-04-16T23:28:48-07:00</lastmod>
@@ -17,18 +20,24 @@
     <loc>http://localhost:1313/posts/blog/musings/</loc>
     <lastmod>2026-03-20T21:45:59-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/blog/recs/</loc>
-    <lastmod>2025-07-28T16:21:20-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/blog/serious/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/breakfast/</loc>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/recs/skyelerssanmateo/</loc>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/sanmateo/</loc>
+    <lastmod>2026-04-19T15:18:51-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/slowgods/</loc>
     <lastmod>2026-04-16T23:28:48-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/books/</loc>
-    <lastmod>2026-04-16T23:28:48-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-04-16T23:28:48-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/scifi/</loc>
