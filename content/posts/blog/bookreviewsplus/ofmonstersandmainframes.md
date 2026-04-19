@@ -1,5 +1,5 @@
 +++
-date = '2026-04-18T22:54:14-07:00'
+date = '2026-04-14T22:54:14-07:00'
 draft = false
 title = 'Book Review: Of Monsters and Mainframes by Barbara Truelove'
 tags = ['SciFi','Books','Fantasy']
@@ -23,4 +23,4 @@ Also have to say - I saw a lot of reviews online that said "this book was so goo
 
 This book made me lose faith in the place I find my book reviews.
 
-{{< figure src="https://cdn.thestorygraph.com/lut7miq9q2iijjdm9mp7rwxn1icu" alt="Dungeon Drawler Carl" width="300" >}}
+{{< figure src="https://cdn.thestorygraph.com/lut7miq9q2iijjdm9mp7rwxn1icu" alt="Monsters and Mainframes" width="300" >}}
