@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-08T22:32:15-07:00</lastmod>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-12-04T22:41:35-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/</loc>
-    <lastmod>2026-04-08T22:32:15-07:00</lastmod>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/</loc>
-    <lastmod>2026-04-08T22:32:15-07:00</lastmod>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/musings/</loc>
     <lastmod>2026-03-20T21:45:59-08:00</lastmod>
@@ -22,16 +22,22 @@
   </url><url>
     <loc>http://localhost:1313/posts/blog/serious/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/books/</loc>
-    <lastmod>2026-04-08T22:32:15-07:00</lastmod>
+    <loc>http://localhost:1313/posts/blog/bookreviewsplus/ofmonstersandmainframes/</loc>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/blog/bookreviewsplus/dungeoncrawlercarl/</loc>
-    <lastmod>2026-04-08T22:32:15-07:00</lastmod>
+    <loc>http://localhost:1313/blog/books/</loc>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/fantasy/</loc>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-08T22:32:15-07:00</lastmod>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/scifi/</loc>
+    <lastmod>2026-04-18T22:54:14-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/blog/bookreviewsplus/dungeoncrawlercarl/</loc>
     <lastmod>2026-04-08T22:32:15-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/prayerforthecrownshy/</loc>
@@ -56,9 +62,6 @@
     <lastmod>2026-03-29T22:09:31-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/brigandsbreadknives/</loc>
-    <lastmod>2026-03-27T19:29:03-11:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/fantasy/</loc>
     <lastmod>2026-03-27T19:29:03-11:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/agnesaubertcatshelter/</loc>
