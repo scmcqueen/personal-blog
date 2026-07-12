@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/myicon.png" />
+<title>Spotify Collaboration Network Analysis | Skyeler C. S. McQueen</title>
+<meta name="title" content="Spotify Collaboration Network Analysis" />
+<meta name="description" content="Trending Tunes: A networks-based approach to anticipating what songs will go viral based on the artist collaboration network
+Mariam Joseph, Luna Liu, Skyeler McQueen, Julia Zhang
+December 2024, For Networks SI 608 at the University of Michigan
+Link to Github Repo with Code &amp; Data: https://github.com/scmcqueen/SI608NetworksProject
+PDF of Paper &amp; Slideshow
+Research Question
+Can we use artists’ collaboration networks to predict trending Instagram Reels songs? Will this method outperform random sampling?
+Motivation
+The rise of short-form videos on platforms like TikTok, YouTube Shorts, and Instagram Reels has introduced a new way for users to consume content. Content creators of these short videos frequently use trending music as their background score. Therefore, to better understand what makes an artist&rsquo;s music a top trending background score for short videos, we propose the following question: can we predict the next top trending Instagram reel music based on previous artists&rsquo; collaboration? This proposed question paves a pathway to exploring the impact of collaboration between artists and music trends&rsquo; influence on social media. Researchers have previously analyzed the collaboration networks in other domains  Conducting an inference study on the characteristics of successful trending music and artists&rsquo; collaboration patterns would provide invaluable insights for current and upcoming artists looking to create their next big viral music." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/projects/spotifynetworkanalysis/">
+  <meta property="og:site_name" content="Skyeler C. S. McQueen">
+  <meta property="og:title" content="Spotify Collaboration Network Analysis">
+  <meta property="og:description" content="Trending Tunes: A networks-based approach to anticipating what songs will go viral based on the artist collaboration network Mariam Joseph, Luna Liu, Skyeler McQueen, Julia Zhang
+December 2024, For Networks SI 608 at the University of Michigan
+Link to Github Repo with Code &amp; Data: https://github.com/scmcqueen/SI608NetworksProject
+PDF of Paper &amp; Slideshow
+Research Question Can we use artists’ collaboration networks to predict trending Instagram Reels songs? Will this method outperform random sampling?
+Motivation The rise of short-form videos on platforms like TikTok, YouTube Shorts, and Instagram Reels has introduced a new way for users to consume content. Content creators of these short videos frequently use trending music as their background score. Therefore, to better understand what makes an artist’s music a top trending background score for short videos, we propose the following question: can we predict the next top trending Instagram reel music based on previous artists’ collaboration? This proposed question paves a pathway to exploring the impact of collaboration between artists and music trends’ influence on social media. Researchers have previously analyzed the collaboration networks in other domains Conducting an inference study on the characteristics of successful trending music and artists’ collaboration patterns would provide invaluable insights for current and upcoming artists looking to create their next big viral music.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-12-09T22:06:02-07:00">
+    <meta property="article:modified_time" content="2024-12-09T22:06:02-07:00">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="Spotify Collaboration Network Analysis">
+  <meta name="twitter:description" content="Trending Tunes: A networks-based approach to anticipating what songs will go viral based on the artist collaboration network Mariam Joseph, Luna Liu, Skyeler McQueen, Julia Zhang
+December 2024, For Networks SI 608 at the University of Michigan
+Link to Github Repo with Code &amp; Data: https://github.com/scmcqueen/SI608NetworksProject
+PDF of Paper &amp; Slideshow
+Research Question Can we use artists’ collaboration networks to predict trending Instagram Reels songs? Will this method outperform random sampling?
+Motivation The rise of short-form videos on platforms like TikTok, YouTube Shorts, and Instagram Reels has introduced a new way for users to consume content. Content creators of these short videos frequently use trending music as their background score. Therefore, to better understand what makes an artist’s music a top trending background score for short videos, we propose the following question: can we predict the next top trending Instagram reel music based on previous artists’ collaboration? This proposed question paves a pathway to exploring the impact of collaboration between artists and music trends’ influence on social media. Researchers have previously analyzed the collaboration networks in other domains Conducting an inference study on the characteristics of successful trending music and artists’ collaboration patterns would provide invaluable insights for current and upcoming artists looking to create their next big viral music.">
+
+
+
+
+  <meta itemprop="name" content="Spotify Collaboration Network Analysis">
+  <meta itemprop="description" content="Trending Tunes: A networks-based approach to anticipating what songs will go viral based on the artist collaboration network Mariam Joseph, Luna Liu, Skyeler McQueen, Julia Zhang
+December 2024, For Networks SI 608 at the University of Michigan
+Link to Github Repo with Code &amp; Data: https://github.com/scmcqueen/SI608NetworksProject
+PDF of Paper &amp; Slideshow
+Research Question Can we use artists’ collaboration networks to predict trending Instagram Reels songs? Will this method outperform random sampling?
+Motivation The rise of short-form videos on platforms like TikTok, YouTube Shorts, and Instagram Reels has introduced a new way for users to consume content. Content creators of these short videos frequently use trending music as their background score. Therefore, to better understand what makes an artist’s music a top trending background score for short videos, we propose the following question: can we predict the next top trending Instagram reel music based on previous artists’ collaboration? This proposed question paves a pathway to exploring the impact of collaboration between artists and music trends’ influence on social media. Researchers have previously analyzed the collaboration networks in other domains Conducting an inference study on the characteristics of successful trending music and artists’ collaboration patterns would provide invaluable insights for current and upcoming artists looking to create their next big viral music.">
+  <meta itemprop="datePublished" content="2024-12-09T22:06:02-07:00">
+  <meta itemprop="dateModified" content="2024-12-09T22:06:02-07:00">
+  <meta itemprop="wordCount" content="3745">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+    :root {
+        --width: 720px;
+        --font-main: Verdana, sans-serif;
+        --font-funky: 'Playfair Display', serif;
+        --font-secondary: Verdana, sans-serif;
+        --font-scale: .8em;
+        --background-color: #F2F9FF;
+        --heading-color: #E85D75;
+        --text-color: #081C2D;
+        --link-color: #E85D75;
+        --visited-color: #1173D0;
+        --code-background-color: #ffffff;
+        --code-color: #1173D0;
+        --blockquote-color: #222;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #081C2D;
+            --heading-color: #eee;
+            --text-color: #ddd;
+            --link-color: #E85D75;
+            --visited-color: #1173D0;
+            --code-background-color: #1173D0;
+            --code-color: #ddd;
+            --blockquote-color: #ccc;
+        }
+    }
+
+    body {
+        font-family: var(--font-secondary);
+        font-size: var(--font-scale);
+        margin: auto;
+        padding: 20px;
+        max-width: var(--width);
+        text-align: left;
+        background-color: var(--background-color);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+        color: var(--text-color);
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-family);
+        color: var(--heading-color);
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    h1 {
+        font-family: var(--font-funky);
+        text-transform: lowercase;
+        font-weight: bolder;
+        font-style: italic;
+        color: var(--heading-color);
+        text-align: center;
+    }
+
+    a {
+        color: var(--link-color);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+    nav {
+        max-width: 1000px;
+        min-width: 400px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+        background-color: #081C2D;
+        color: #F2F9FF;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    nav a:hover {
+        opacity: .95;
+        text-decoration: none;
+         
+        background-color: #F2F9FF;
+        color: #081C2D;
+    }
+
+    strong,
+    b {
+        color: var(--heading-color);
+    }
+
+    button {
+        margin: 0;
+        cursor: pointer;
+    }
+
+    time {
+        font-family: monospace;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    main {
+        line-height: 1.6;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px dashed;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    code {
+        font-family: monospace;
+        padding: 2px;
+        background-color: var(--code-background-color);
+        color: var(--code-color);
+        border-radius: 3px;
+    }
+
+    blockquote {
+        border-left: 1px solid #999;
+        color: var(--code-color);
+        padding-left: 20px;
+        font-style: italic;
+    }
+
+    footer {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .title:hover {
+        text-decoration: none;
+    }
+
+    .title h2,
+    h1 {
+        font-size: 2.8em;
+        font-family: var(--font-funky);
+        text-transform: lowercase;
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    .inline {
+        width: auto !important;
+    }
+
+    .highlight,
+    .code {
+        padding: 1px 15px;
+        background-color: var(--code-background-color);
+        color: var(--code-color);
+        border-radius: 3px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        overflow-x: auto;
+    }
+
+     
+    ul.blog-posts {
+        list-style-type: none;
+        padding: unset;
+    }
+
+    ul.blog-posts li {
+        display: flex;
+    }
+
+    ul.blog-posts li span {
+        flex: 0 0 130px;
+    }
+
+    ul.blog-posts li a:visited {
+        color: var(--visited-color);
+    }
+</style>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Work+Sans:wght@300&display=swap"
+  rel="stylesheet"></head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Skyeler C. S. McQueen</h2>
+</a>
+<nav>
+<a href="/">home</a>
+
+<a href="/projects/">projects</a>
+
+<a href="/posts/blog/">blog</a>
+</nav>
+</header>
+  <main>
+
+<content>
+  <h2 id="trending-tunes-a-networks-based-approach-to-anticipating-what-songs-will-go-viral-based-on-the-artist-collaboration-network">Trending Tunes: A networks-based approach to anticipating what songs will go viral based on the artist collaboration network</h2>
+<p>Mariam Joseph, Luna Liu, Skyeler McQueen, Julia Zhang</p>
+<p>December 2024, For Networks SI 608 at the University of Michigan</p>
+<p>Link to Github Repo with Code &amp; Data: <a href="https://github.com/scmcqueen/SI608NetworksProject">https://github.com/scmcqueen/SI608NetworksProject</a></p>
+<p><a href="https://github.com/scmcqueen/SI608NetworksProject/blob/72484d88907544d9f313d1b9859ad78e5fc515e7/608%20Final%20project%20Report.pdf">PDF of Paper</a> &amp; <a href="https://github.com/scmcqueen/SI608NetworksProject/blob/72484d88907544d9f313d1b9859ad78e5fc515e7/608%20Final%20Presentation.pdf">Slideshow</a></p>
+<h3 id="research-question">Research Question</h3>
+<p>Can we use artists’ collaboration networks to predict trending Instagram Reels songs? Will this method outperform random sampling?</p>
+<h3 id="motivation">Motivation</h3>
+<p>The rise of short-form videos on platforms like TikTok, YouTube Shorts, and Instagram Reels has introduced a new way for users to consume content. Content creators of these short videos frequently use trending music as their background score. Therefore, to better understand what makes an artist&rsquo;s music a top trending background score for short videos, we propose the following question: can we predict the next top trending Instagram reel music based on previous artists&rsquo; collaboration? This proposed question paves a pathway to exploring the impact of collaboration between artists and music trends&rsquo; influence on social media. Researchers have previously analyzed the collaboration networks in other domains  Conducting an inference study on the characteristics of successful trending music and artists&rsquo; collaboration patterns would provide invaluable insights for current and upcoming artists looking to create their next big viral music.</p>
+<h3 id="related-work">Related Work</h3>
+<p>The concept of using networks to predict trends is well-established in research. Newman’s study “The Structure of Scientific Collaboration Networks” (2001) showed that &ldquo;small world&rdquo; properties, where individuals are separated by short paths, are common in collaboration networks. This insight supports the idea that close connections within a network, such as those between artists, can influence widespread reach and impact.
+Adamic and Adar’s “Friends and Neighbors on the Web” (2003) expanded on network analysis by introducing a method to predict link formation based on shared neighbors, which could be applied to predicting connections in a music collaboration network. This metric assesses how mutual connections can signal new links, potentially helping identify which artists or songs might achieve popularity.
+In more recent work, Luo et al. used graph neural networks (GNN) to predict group membership in bipartite networks in “Group link prediction in bipartite graphs with graph neural networks (2025). We could adapt this method to track and anticipate the songs likely to enter trending playlists on social media. Their method focuses on link prediction within networks, where the &ldquo;top 100&rdquo; playlist could represent a significant group node, connecting songs through collaborative or co-featured artists. By applying similar GNN techniques and the Adamic–Adar index, we can explore how collaboration patterns between artists contribute to trending music on platforms like Instagram Reels. This study will build upon these foundational insights, using both network-based link prediction and GNNs to examine if collaboration structures can anticipate the next viral track, offering valuable guidance for artists aiming for social media success.</p>
+<h3 id="datasets">Datasets</h3>
+<p>The data is generated from the Spotify API. Each node is an artist and there is an edge between the two nodes if the artists collaborated on an album before. We sampled the Instagram Reel Top 100 Playlist and then also completed a random sample of artists to serve as our baseline. After these initial samples, we queried the seed nodes’ collaborators and their collaborators. Note that the edges generated from collaborations are weighted by the number of collaborations (albums) that the artists have published on Spotify together. Please refer to the appendix for an example image to help explain this strategy. We collect metadata on each artist: their followers, popularity, and genre. There is a table explaining the data in the appendix.</p>
+<p>Data limitations: The Spotify API has a limit of how many albums (and thus collaborators) one can query. We can have a maximum of 50 collaborators per artist (most recent first). For a majority of the artists queried, this limitation poses no problem. For a few famous artists (e.g. Sabrina Carpenter and Harry Styles), we are limiting the number of edges a node can have.</p>
+<h3 id="data-collection">Data Collection</h3>
+<p>We used the Spotify API to query the “Instagram Reels - Top Trending 2024 | NEW VIRAL HIT SONGS ON THE INTERNET” playlist, which is updated once a week. The query fetches all of the artists, their collaborators, and their collaborators’ collaborators. The script for this process is included in our GitHub. Additionally, we completed a pseudo-random query of artists, based on Perry Janssen’s random track script (Janssen 2019). This query fetches random artists and their first and second-layer collaborators.  The Instagram Reels playlist is updated once a week, so we will be completing this querying process once a week in order to see how the network evolves over time.</p>
+<h3 id="methods--results">Methods &amp; Results</h3>
+<p>We attempted four methods for predicting whether an artist will be featured in the Instagram Reels Trending Tunes playlist: ML Models with &amp; without network features, ML Model with node embeddings, Community detection via clique percolation, and graph neural networks. In the following section, we will outline how we conducted these models and their results.</p>
+<h4 id="ml-model-with--without-network-features">ML Model With &amp; Without Network Features</h4>
+<p>To evaluate whether artist collaboration networks improve the prediction of trending Instagram Reels songs, we developed two machine learning models:</p>
+<ol>
+<li>Model Without Network Features: Focused on artist metadata such as popularity, followers, and collaborator-based features (e.g., number of collaborators and their popularity).</li>
+<li>Model With Network Features: Included additional features derived from network analysis, such as PageRank, clustering coefficient, degree centrality, and closeness centrality.</li>
+</ol>
+<h5 id="steps">Steps:</h5>
+<ol>
+<li>Data Collection and Preprocessing:</li>
+</ol>
+<ul>
+<li>For Model 1, we derived features such as the number of collaborators and the aggregated popularity of collaborators.</li>
+<li>For Model 2, we enhanced the dataset with network features, leveraging graph algorithms to calculate metrics like PageRank and clustering coefficient.</li>
+</ul>
+<ol start="2">
+<li>Oversampling to Address Class Imbalance:</li>
+</ol>
+<ul>
+<li>The target variable (in_playlist) was highly imbalanced. To handle this, I used SMOTE (Synthetic Minority Oversampling Technique), which generates synthetic samples for the minority class to balance the dataset.</li>
+</ul>
+<ol start="3">
+<li>Feature Scaling:</li>
+</ol>
+<ul>
+<li>Numerical features were standardized using StandardScaler to ensure all features had equal importance.</li>
+</ul>
+<ol start="4">
+<li>Model Selection and Training:</li>
+</ol>
+<ul>
+<li>We trained the following models:
+<ul>
+<li>Random Forest Classifier</li>
+<li>XGBoost Classifier</li>
+<li>LightGBM Classifier</li>
+</ul>
+</li>
+<li>Models were evaluated using the F1 Score, prioritizing a balance between precision and recall.</li>
+</ul>
+<ol start="5">
+<li>Hyperparameter Tuning:
+For Model 2, we used Grid search to fine-tune the Light GBM model. Key hyperparameters, such as the number of estimators, maximum depth, and splitting criteria, were optimized.</li>
+</ol>
+<h5 id="performance">Performance:</h5>
+<table>
+  <thead>
+      <tr>
+          <th>Metric</th>
+          <th style="text-align: right">Model 1</th>
+          <th style="text-align: right">Model 2</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Accuracy</td>
+          <td style="text-align: right">0.98017</td>
+          <td style="text-align: right">0.99009</td>
+      </tr>
+      <tr>
+          <td>Precision</td>
+          <td style="text-align: right">0.19231</td>
+          <td style="text-align: right">0.46154</td>
+      </tr>
+      <tr>
+          <td>Recall</td>
+          <td style="text-align: right">0.35714</td>
+          <td style="text-align: right">0.42857</td>
+      </tr>
+      <tr>
+          <td>F1 Score</td>
+          <td style="text-align: right">0.25000</td>
+          <td style="text-align: right">0.44444</td>
+      </tr>
+  </tbody>
+</table>
+<h5 id="key-observations">Key Observations:</h5>
+<p>Both models prioritize popularity, reflecting the importance of individual artist metrics and network proximity in predicting playlist inclusion. Model 2, with its richer feature set, like closeness_cent, underscores the predictive power of collaboration-based and network-driven metrics.</p>
+<p>Network-specific features like deg_cent (degree centrality) and clustering contribute substantially to Model 2, highlighting how these relational metrics add explanatory power. The feature degree has zero importance in Model 2, likely because its information is redundant when other network features (e.g., deg_cent) are already included.
+Feature importance in Model 2 is distributed across a broader range of metrics, suggesting a more nuanced model capable of balancing multiple factors. By capturing both individual artist characteristics and their network relationships, Model 2 develops a deeper understanding of what drives playlist inclusion.</p>
+<h5 id="advantages-of-model-2">Advantages of Model 2:</h5>
+<p>By combining individual and network metrics, Model 2 can identify less obvious candidates for playlist inclusion, such as artists in influential communities or with high collaborative potential. Playlists often feature artists based on network effects (e.g., collaborations, community influence), and Model 2 reflects this reality, leading to more accurate and practical predictions. The distributed importance across features allows Model 2 to rely less on any single metric, making it more robust and adaptable.</p>
+<h5 id="how-network-features-may-improve-predictions">How Network Features May Improve Predictions:</h5>
+<p>Network metrics like closeness centrality highlight how closely an artist is connected to others in the network. Artists with higher centrality may have greater exposure and influence, increasing their likelihood of playlist inclusion. Clustering coefficients reveal the density of connections around an artist, indicating whether they are part of tightly-knit communities. Such artists might benefit from collaborative promotion and shared fan bases, making them more attractive for playlists.</p>
+<h5 id="why-networks-are-beneficial">Why Networks are Beneficial:</h5>
+<p>Network-based features provide additional context about an artist’s position within the ecosystem. This allows the model to capture dynamics that are not apparent from individual metrics like popularity or follower count. Playlists often feature artists who collaborate frequently or belong to influential communities. Network metrics mimic these real-world interactions, making predictions more aligned with human decision-making. Combining traditional features (e.g., popularity, followers) with network features creates a richer dataset, enabling the model to identify complex patterns and interactions that influence playlist inclusion.</p>
+<h5 id="potential-reasons-for-improvement">Potential Reasons for Improvement:</h5>
+<p>Playlists are curated based on both individual artist metrics and their relationships within the music community. Network-based features directly reflect these relationships, helping the model identify artists who might benefit from collaborative exposure or network-driven popularity.</p>
+<p>Networks inherently account for indirect influence, such as an artist being connected to others who are already prominent. This secondary influence is often a factor in real-world playlist curation, where collaborations and associations play a role.</p>
+<p>By integrating these features, Model 2 captures a more holistic view of the factors influencing playlist inclusion, explaining its superior performance compared to the simpler Model 1, which relies only on individual artist metrics. This highlights the critical role of network analysis in understanding and predicting collaborative, community-driven phenomena in music streaming.</p>
+<h4 id="community-detection-and-alignment-with-the-in_playlist-feature">Community Detection and Alignment with the in_playlist Feature</h4>
+<p>To explore the relationship between community structures and the in_playlist feature, we conducted community detection on weekly networks using the clique percolation method with varying values of k. The results provide insights into the granularity of the detected communities, their alignment with the in_playlist feature, and the temporal evolution of the network structure.
+We performed community detection on the large network and analyzed how these communities matched the in_playlist feature. The specific results are as follows:</p>
+<ul>
+<li>
+<p><strong>Week 1</strong></p>
+<ul>
+<li><strong>Clique Percolation (k = 3)</strong>
+<ul>
+<li>Discovered <strong>191</strong> communities</li>
+<li>Average community size: <strong>16.69</strong> nodes</li>
+<li>Pairwise accuracy: <strong>0.896</strong> (alignment between communities and the <code>in_playlist</code> feature)</li>
+</ul>
+</li>
+<li><strong>Clique Percolation (k = 4)</strong>
+<ul>
+<li>Discovered <strong>115</strong> communities</li>
+<li>Average community size: <strong>10.09</strong> nodes</li>
+<li>Pairwise accuracy: <strong>0.972</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Week 2</strong></p>
+<ul>
+<li><strong>Clique Percolation (k = 3)</strong>
+<ul>
+<li>Discovered <strong>187</strong> communities</li>
+<li>Average community size: <strong>16.94</strong> nodes</li>
+<li>Pairwise accuracy: <strong>0.896</strong></li>
+</ul>
+</li>
+<li><strong>Clique Percolation (k = 4)</strong>
+<ul>
+<li>Discovered <strong>113</strong> communities</li>
+<li>Average community size: <strong>10.20</strong> nodes</li>
+<li>Pairwise accuracy: <strong>0.972</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Week 3</strong></p>
+<ul>
+<li><strong>Clique Percolation (k = 3)</strong>
+<ul>
+<li>Discovered <strong>185</strong> communities</li>
+<li>Average community size: <strong>17.09</strong> nodes</li>
+<li>Pairwise accuracy: <strong>0.898</strong></li>
+</ul>
+</li>
+<li><strong>Clique Percolation (k = 4)</strong>
+<ul>
+<li>Discovered <strong>113</strong> communities</li>
+<li>Average community size: <strong>10.20</strong> nodes</li>
+<li>Pairwise accuracy: <strong>0.972</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="key-findings">Key Findings:</h5>
+<ol>
+<li>k=4 consistently produces fewer but more tightly-knit communities compared to k=3.</li>
+<li>Communities exhibit a strong alignment with the in_playlist feature, particularly when k=4 is used.</li>
+<li>The pairwise accuracy is stable across all three weeks, indicating that the alignment between community structures and the in_playlist feature is consistent over time.</li>
+<li>The network size remains relatively stable across the three weeks, with minor variations in the number of nodes and edges:</li>
+</ol>
+<ul>
+<li>Week 1: 4,199 nodes, 19,781 edges</li>
+<li>Week 2: 4,172 nodes, 19,742 edges</li>
+<li>Week 3: 4,166 nodes, 19,729 edges</li>
+</ul>
+<p>This analysis demonstrates that community structures can reliably reflect whether an artist is included in a playlist. Using a higher value of k (e.g., k=4) leads to more accurate and meaningful community detection results, as the detected communities are smaller and more cohesive. Additionally, the consistency in accuracy across weeks suggests that the network&rsquo;s structural properties remain stable over time.</p>
+<h4 id="node-embeddings-ml-model">Node Embeddings ML Model</h4>
+<p>We developed a predictive model using node embeddings to assess an artist&rsquo;s popularity, which was defined by the in_playlist variable. The model incorporated features such as the artist&rsquo;s name, collaborator&rsquo;s name, number of collaborators, artist-collaborator-work count, total published, highest collaboration-work count, popularity, and followers count. We implemented the Node2Vec algorithm, leveraging random walks to generate the node embeddings. We developed three machine learning models to predict popularity: Random Forest, Logistic regression, and Gradient Boosting Classifier. Each model&rsquo;s performance was evaluated using 5-fold cross-validation, yielding the following F1-scores:</p>
+<h5 id="ml-models-with-5-fold-cross-validation">ML Models with 5-Fold Cross Validation</h5>
+<table>
+  <thead>
+      <tr>
+          <th>ML Model</th>
+          <th style="text-align: right">Average F1 Score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Random Forest</td>
+          <td style="text-align: right">0.059</td>
+      </tr>
+      <tr>
+          <td>Gradient Boosting Classifier</td>
+          <td style="text-align: right">0.013</td>
+      </tr>
+      <tr>
+          <td>Logistic Regression</td>
+          <td style="text-align: right">0.000</td>
+      </tr>
+  </tbody>
+</table>
+<p>We observed that the F1 scores for all models were notably low. Among them, the Random Forest model emerged as the most effective, achieving an F1 score of 0.059 in predicting artist popularity based on their collaborations. The Gradient Boosting Classifier followed, with an F1 score of 0.013. Further analysis revealed a significant class imbalance in the dataset, which likely impacted the performance of our predictive models</p>
+<h5 id="ml-models-with-smote-and-5-fold-cross-validation">ML Models with SMOTE and 5-Fold Cross Validation</h5>
+<table>
+  <thead>
+      <tr>
+          <th>ML Model</th>
+          <th style="text-align: right">Average F1 Score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Random Forest</td>
+          <td style="text-align: right">0.980</td>
+      </tr>
+      <tr>
+          <td>Gradient Boosting Classifier</td>
+          <td style="text-align: right">0.797</td>
+      </tr>
+      <tr>
+          <td>Logistic Regression</td>
+          <td style="text-align: right">0.923</td>
+      </tr>
+  </tbody>
+</table>
+<p>Upon identifying class imbalance, we implemented the SMOTE technique to enhance our dataset&rsquo;s balance and reassessed the models. As seen in the table above, the improvements were significant: the Random Forest model maintained the highest F1 score (0.980). Notably, the Logistic Regression saw a dramatic improvement, soaring from an F1 score of 0 to 0.797. Similarly, the Gradient Boosting Classifier model&rsquo;s performance increased from 0.013 to 0.923</p>
+<h4 id="graph-neural-network">Graph Neural Network</h4>
+<p>In addition to the ML model, we attempted to make a graph neural network (or GNN). Following the demo we used in our lab, we utilized the Pytorch Geometric Package to create a graph neural network for each week. At first, we attempted the GNN with week one data and used the features of popularity and followers. This was largely unsuccessful, likely due to the class imbalance: there are significantly more artists not included in the Instagram Reels popularity playlist than those who are included. We did a stratified split based on the ‘in_playlist’ column, so that test, train, and validate all had equal proportions of artists in the playlist and not. We were able to get a high accuracy, but a very low F-1 score. Note that the F-1 score is important to analyze here, as it provides a more balanced score than accuracy due to the class imbalance. For example, if a data set has 95% of its labels as ‘False’, you will get an accuracy of 95% if the model spits out ‘False’ for every node.</p>
+<p>We attempted to impute some additional features to improve the model. One-hot-encoding the genres was our initial plan, but as there are 1,987 genres this would prove to be computationally challenging. Instead, we imputed the number of genres per artist. Additionally, we calculated the top genres for artists in the playlist and not. The top genres for artists in the playlist are [&lsquo;pop&rsquo; &lsquo;rap&rsquo; &lsquo;dance-pop&rsquo; &lsquo;pov: indie&rsquo; &lsquo;hip hop&rsquo;] and for those not in the playlist are  [&lsquo;covertronica&rsquo; &rsquo;tropical house&rsquo; &lsquo;pop dance&rsquo; &lsquo;rap&rsquo; &lsquo;pop&rsquo;]. We made a column for each of these genres where there is a 1 if the artist is tagged with that genre and 0 otherwise. This was our abbreviated version of one-hot encoding.  We attempted different optimizers, loss functions, hidden layer size, learning rates, and number of epochs to find the best-performing model. Using the torch.nn.CrossEntropyLoss as the optimizer, we got the highest F-1 results.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: right">Week</th>
+          <th style="text-align: right">Highest Test F1 Score</th>
+          <th style="text-align: right">Highest Test Accuracy Score</th>
+          <th style="text-align: right">Final Loss</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">0.2302</td>
+          <td style="text-align: right">0.8302</td>
+          <td style="text-align: right">0.5370</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">0.2263</td>
+          <td style="text-align: right">0.8323</td>
+          <td style="text-align: right">0.5620</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">0.1769</td>
+          <td style="text-align: right">0.8064</td>
+          <td style="text-align: right">0.5770</td>
+      </tr>
+  </tbody>
+</table>
+<p>The F-1 Score never exceeded .24, no matter how long we trained or what loss, learning rates, and hidden layers we tried. Due to the limited amount of time for this project, we could not discover a better model.</p>
+<figure><img src="https://raw.githubusercontent.com/scmcqueen/SI608NetworksProject/refs/heads/main/graphmodelperformance.png"
+    alt="Loss, Accuracy, and F1 For Week 1 GNN" width="500">
+</figure>
+
+<h3 id="challenges">Challenges</h3>
+<p>One of the main challenges of the project was securing the data. We designed our own queries to seed the network with the top Instagram Reels song playlist, but we also needed to balance our network with random nodes in order to do the prediction. The Spotify API does not have the functionality to randomly sample different artists and albums. Our initial plan was to download the Spotify Million Playlist Dataset and randomly select artists to include in our graph. Upon inspection, though, we realized that the dataset was created in 2020 and had not been updated since. This seemed like a poor analog for the trending artists on Instagram, as many of them are new artists. For example, the popular EDM artist Ariis who was on the top 100 songs Instagram playlist the first week had not put any music out on Spotify before 2022. To have our random sample representative (in particular, containing newer artists), we instead decided to modify Perry Janssen’s tutorial for querying random songs to get random artists(Janssen 2019). It is not a truly random method, but we believe that it is more representative of the current artists available on Spotify than using an outdated random sample. The music industry moves fast – a lot can change in 6 months, let alone 4 years.</p>
+<p>Sadly, we could not resolve all of the challenges and limitations of the Spotify API. The easiest way to query collaborators per artist is to get all of the albums put out by the artist, and then query the list of all artists who contributed to each album. This is convenient, as many albums have unique collaborators on each song, so querying on an album level allows us to get all of the unique collaborators more quickly than querying each song to get collaborators. For example, Brat and It&rsquo;s Completely Different but Also Still Brat has over 20 artists collaborating on it and we can get all of these artists in one query, instead of querying each song in all of Charli XCX’s songs. We are limited to querying only the 50 most recent albums. For a majority of the artists on Spotify, this limit does not impact the data as they have less than 50 albums. There are a few larger artists, though, like Sabrina Carpenter and Harry Styles, with more than 50 albums. We acknowledge that this limits their data and downplays how influential these artists are.</p>
+<p>When developing the ML models, the project faced several challenges. One significant issue was the class imbalance in the dataset, as the majority of artists were not part of a trending playlist. This imbalance was addressed using SMOTE, which generated synthetic samples for the minority class, improving model recall without sacrificing precision. Another challenge was the computational complexity associated with calculating network features for thousands of artists, which required optimizing the code and carefully managing resources. Additionally, some features, such as popularity and followers, exhibited high correlation, which necessitated proper scaling and thoughtful feature selection to minimize redundancy and prevent overfitting. These challenges highlighted the need for meticulous preprocessing and optimization to ensure accurate and efficient model development.
+The imbalance was also an issue for the graph neural network. The first time we tried to build the GNN, we used the torch.nn.functional.nll_loss() function from the lab GNN demo. This loss function led us to get an F-1 score of 0 consistently. After researching methods for resolving it, we used the torch.nn.CrossEntropyLoss function where we calculate the weights based on the training data, using the sklearn.utils.class_weight.compute_class_weight function. This significantly improved the GNN’s performance.
+Conclusions</p>
+<p>We tried four different methods for predicting which artists will are in the “Instagram Reels - Top Trending 2024 | NEW VIRAL HIT SONGS ON THE INTERNET” playlist from a network generated with nodes from the playlist, a selection of randomly selected nodes, and their first and second degree collaborators. We wanted to see if using the network collaboration features would be a better way to predict an artist’s success than predicting success based on Spotify features like popularity and followers. Of all the methods we tried, we found that using a random forest machine learning model with node embeddings was the best performing solution (f-1 score of 0.980), compared to a machine learning model without graph information, a machine learning model with graph information (page rank, clustering, etc.), clique percolation community detection, and a graph neural network. This shows that collaboration network information is a helpful feature for predicting which artists will  be popular on Instagram, when combined with other ML features.</p>
+<p>In the future, we would recommend that researchers continue to look at the problem of using collaboration networks to predict artist popularity. Perhaps with more time and computing resources, researchers or students would be able to build a more advanced GNN that resulted in a higher F-1 score. In a similar vein, it would be really interesting to look at a network with no limit on the number of collaborators. We noticed that particularly with classical musicians, the limit of 50 albums dampened the number of degrees that the artists should have. With more computational power and greater access to Spotify data, a researcher could analyze a fuller collaboration network to gain more insights.  Additionally, it would be interesting to compare different measures of popularity. With additional time, we would be interested to see how the Instagram popular songs compare to those on TikTok or the Billboard Top 100. Popularity is a hard concept to measure, especially as it differs in different geo-regions. Another interesting area of study would be to compare the popularity of artists and genres in different countries and language markets.</p>
+<h3 id="citations">Citations</h3>
+<p>Adamic, Lada A; Adar, Eytan. “Friends and neighbors on the Web.” <em>Social Networks</em>, vol. 25, no.
+3, 2003, pp. 211-230, <a href="https://doi.org/10.1016/S0378-8733(03)00009-1">https://doi.org/10.1016/S0378-8733(03)00009-1</a>.</p>
+<p>Aric A. Hagberg, Daniel A. Schult and Pieter J. Swart, “Exploring network structure, dynamics, and
+function using NetworkX”, in <em>Proceedings of the 7th Python in Science Conference (SciPy2008)</em>,
+Gäel Varoquaux, Travis Vaught, and Jarrod Millman (Eds), (Pasadena, CA USA), pp. 11–15, Aug 2008</p>
+<p>“Instagram Reels - Top Trending 2024 | NEW VIRAL HIT SONGS ON THE INTERNET.” <em>Spotify</em>,
+created by FeelQ Recordings, 30 Sept 2024,
+open.spotify.com/playlist/6dSz0AWxkgBfhlNBFyzqFf.</p>
+<p>Janssen, Perry. “Getting random tracks using the Spotify API.” <em>Medium</em>,
+<a href="https://perryjanssen.medium.com/getting-random-tracks-using-the-spotify-api-61889b0c0c27">https://perryjanssen.medium.com/getting-random-tracks-using-the-spotify-api-61889b0c0c27</a>. 30
+Oct 2024.</p>
+<p>Luo, Shijie; Li, He; Huang, Jianbin; Ma, Xiaoke; Cui, Jiangtao; Qiao, Shaojie; Yoo, Jaesoo.
+“Group link prediction in bipartite graphs with graph neural networks.” <em>Pattern
+Recognition</em>, vol. 158, 2025, pp. 110977,
+<a href="https://www.sciencedirect.com/science/article/pii/S0031320324007283">https://www.sciencedirect.com/science/article/pii/S0031320324007283</a>.</p>
+<p>Newman, M. E. J. “The structure of scientific collaboration networks.” <em>Proceedings of the
+National Academy of Sciences</em>, vol. 98, no. 2, 2001, pp. 404–409,
+<a href="http://dx.doi.org/10.1073/pnas.98.2.404">http://dx.doi.org/10.1073/pnas.98.2.404</a>.</p>
+<p>Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., … Chintala, S. (2019). <em>PyTorch: An
+Imperative Style, High-Performance Deep Learning Library.In Advances in Neural Information
+Processing Systems 32</em> (pp. 8024–8035). Curran Associates, Inc. Retrieved from
+<a href="http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-">http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-</a>
+library.pdf</p>
+<p>Pedregosa, Fabian, et al. &ldquo;Scikit-learn: Machine Learning in Python.&rdquo; <em>Journal of Machine Learning
+Research</em>, vol. 12, 2011, pp. 2825-2830.</p>
+<p>The pandas development team. pandas-dev/pandas: Pandas. 2020, Zenodo,
+doi:10.5281/zenodo.3509134. Accessed 2 Dec. 2024.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>
