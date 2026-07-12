@@ -1,7 +1,7 @@
 +++
 date = '2026-05-01T19:20:17-07:00'
 draft = false
-title = 'The Seven Dials Mystery by Agatha Christie'
+title = 'Book Review: The Seven Dials Mystery by Agatha Christie'
 tags = ['Books','Mystery','Classic']
 +++
 
