@@ -1,8 +1,8 @@
 +++
-date = '2026-05-08T19:55:18-07:00'
+date = '2026-05-19T19:55:18-07:00'
 draft = false
 title = "Book Review: A Witch's Guide to Magical Innkeeping by Sangu Mandanna"
-tags = ['Books','Cozy','Fantasy']
+tags = ['Books','Cozy','Fantasy','Romance']
 +++
 
 # *A Witch's Guide to Magical Innkeeping* by Sangu Mandanna
