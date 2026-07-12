@@ -1,14 +1,12 @@
 +++
 date = '2024-12-04T22:41:35-07:00'
-draft = true
+draft = false
 title = 'Mining the National Parks: Applying Data Mining Techniques to National Park Service Visitor Statistics'
 +++
 
-# Mining the National Parks:
+## Mining the National Parks: Applying Data Mining Techniques to National Park Service Visitor Statistics
 
-## Applying Data Mining Techniques to National Park Service Visitor Statistics
-
-December 2024, For Data Mining SI 671
+December 2024, For Data Mining SI 671 at the University of Michigan
 
 Github Project: [Mining the National Parks: Applying Data Mining Techniques to National Park Service Visitor Statistics](https://github.com/scmcqueen/NationalParksDataMining)
 
@@ -18,7 +16,7 @@ In this project, we apply data mining techniques like Dynamic Time Warping, seas
 
 ### Motivation
 
-During the 2020 Covid-19 outbreak, both international and domestic travel came to a halt due to public safety concerns. This global pandemic dramatically changed the landscape of tourism in the United States and abroad. In this paper, we will be analyzing the impact of the Covid-19 pandemic on United States National Parks visitation patterns. 
+During the 2020 Covid-19 outbreak, both international and domestic travel came to a halt due to public safety concerns. This global pandemic dramatically changed the landscape of tourism in the United States and abroad. In this paper, we will be analyzing the impact of the Covid-19 pandemic on United States National Parks visitation patterns.
 
 We will begin by first understanding the visitation patterns of the National Parks on a state aggregate level. We want to understand the seasonality of visitation, how the different park types and regions differ, and if any parks or regions are 'outliers', meaning that their visitation patterns are significantly different than other parks. Then we want to analyze the change in visitation patterns after March 2020. We want to compare the impact of the Covid-19 pandemic to that of the 2008 economic recession. Additionally, we will see how search trends for terms like 'pandemic' and 'recession' in the United States correlate to park visitation. The search trends will serve as a proxy for data about these major events (the 2008 economic recession and Covid-19 pandemic).
 
@@ -45,7 +43,15 @@ One important thing to note is that this data covers all parks run by the Nation
 
 In the extracted data, there 395 parks with data collected from January 2003 to December 2023. There are 55 states, territories, and districts included. In total, there are 93328 rows and 35 columns.
 
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/parksbystate.png" alt=" Number of parks managed by the National Parks Service per state" width="500" >}}
+
+##### Figure 1: Number of parks managed by the National Parks Service per state.
+
 We also sourced trend data from [Google Search Trend data](https://trends.google.com/trends/) from the past 20 years\cite{google}. Four queries were conducted with the terms 'pandemic', 'national park', 'best national parks', and 'recession' with columns for the date (monthly) and the frequency of the term.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/searchtrends.png" alt="Google search term frequency over time" width="500" >}}
+
+##### Figure 2: Google search term frequency over time.
 
 ### Related Work
 
@@ -55,10 +61,18 @@ In ["Comparing and Combining Time Series Trajectories Using Dynamic Time Warping
 
 #### Do visitation patterns differ by state? Or region?
 
-We began by trying a few different ways to look at the visitation data: raw data, first order differencing, and 12 month differencing. There appear to be strong seasonal components at both the park, state, and regional levels. For example, in figure \ref{fig:sleeping}, we can see the visitor rates for Sleeping Bear Dunes National Lakeshore.
+We began by trying a few different ways to look at the visitation data: raw data, first order differencing, and 12 month differencing. There appear to be strong seasonal components at both the park, state, and regional levels. For example, in figure 3, we can see the visitor rates for Sleeping Bear Dunes National Lakeshore.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/sleepingbeardunes.png" alt="Visitor amounts split by visit type for Sleeping Bear Dunes National Lakeshore." width="500" >}}
+
+##### Figure 3: Visitor amounts split by visit type for Sleeping Bear Dunes National Lakeshore.
 
 
-Additionally, when we aggregate visitor count on the state level, we continue to see these seasonal patterns. Going forward, we will use the aggregated data on the state level as some parks (like Gates to the Arctic in Alaska) have very low visitation rates. 
+Additionally, when we aggregate visitor count on the state level, we continue to see these seasonal patterns (refer to the example of Michigan). Going forward, we will use the aggregated data on the state level as some parks (like Gates to the Arctic in Alaska) have very low visitation rates.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/miparkvisits.png" alt="Aggregate visitor amounts split by visit type for National Parks in state of Michigan." width="500" >}}
+
+##### Figure 4: Aggregate visitor amounts split by visit type for National Parks in state of Michigan.
 
  We first attempted to difference the data by looking at the increase in visitors each month. The data was less smooth afterwards this differencing, implying it is not an optimal strategy for analysis. Additionally we differenced with a 12 month period, to see the change in visitors in the same month in the year before. This produced a more stationary time series than differencing with a one month period, but there was still some variance. We then used standardization of data, where for each time series point $(y_k, t_k)$ we transform $y_k$ such that $y_k' = (y_k -\bar{y})/\sigma$ where $\bar{y}$ is the mean of $y_k \forall k$ and $\sigma$ is the standard deviation of $y_k \forall k$.
 
@@ -82,7 +96,11 @@ In table 1, we can see that the seasonal similarity is lower on average for pair
 
 For each state, we calculated the number of each type of park (National Historic Park, National Park, National Monument, etc.) in that state. For each pairs of states, we calculated the euclidean distance, Jaccard similarity, cosine distance, and DTW cost for the vectors. The DTW cost is not pertinent in this case, as there is no time component. We selected the euclidean distance to create the graph using networkx, by keeping only the pairs of states that are in the 25\% most similar of the euclidean distance, meaning the smallest 25\% of euclidean distances.
 
-The states are the nodes in the graph and the edges connect states with euclidean distances less than 2.645751 (which is the 25th percentile of all euclidean distances). The graph created has 40 nodes and 336 edges, creating two connected components as shown in INSERT IMAGE LATER. The largest connected component has 38 nodes and 335 edges and the smaller component has 2 nodes and 1 edge. The smaller connected component is made up of Utah and Colorado, which are both states in the Intermountain region.
+The states are the nodes in the graph and the edges connect states with euclidean distances less than 2.645751 (which is the 25th percentile of all euclidean distances). The graph created has 40 nodes and 336 edges, creating two connected components as shown in figure 5 below. The largest connected component has 38 nodes and 335 edges and the smaller component has 2 nodes and 1 edge. The smaller connected component is made up of Utah and Colorado, which are both states in the Intermountain region.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/statesimilaritygraph.png" alt="States similarity network by National Park distribution." width="500" >}}
+
+##### Figure 5: States similarity network by National Park distribution.
 
 The states with the highest degrees are the Virgin Islands, Illinois, and Indiana. The states with the highest pagerank values are the Virgin Islands, Illinois, and Montana while the states with the highest clustering levels are Arkansas, Michigan, and Rhode Island.
 
@@ -104,16 +122,27 @@ We grouped the nodes by their region and calculated the average pagerank, degree
 
 
 In order to analyze how these events impacted national park visitation data, we will focus only on Recreational Visits. This is because almost every park has frequent recreation visits, but not all parks have non-recreation visits or camping visits. For example, national historic parks like the Eleanor Roosevelt National Historic Site are day use only (as per the [National Parks Official Website](https://www.nps.gov/elro/index.htm)). We will build a series of ARIMA models for each state, using the pmdarima.autoarima module.
+
+
      
 The pmdarima.arima.auto_arima model that grid searches different p, q, and d values to find the optimal values. We aggregated on the state level again, as per the same reason as states above. This deals with sparsity, as some national parks have very few visitors.
 
- We split the recreation visitor data before and after the event. For the 2008 recession, we split the data before and after December 1st, 2007 and for the 2020 pandemic, we split the data before and after March 1st, 2020. The data before the event was used to train the ARIMA model and the data after the event was used. The data for each state after the event was used to test the model. This method was devised in order to see if the pandemic and recession caused a change in typical visitation patterns. If the model predictions after the event are very similar to the true values, we might assume that the event did not have a significant impact on the park visitation in that state. If the model predictions are very dissimilar to the true values, then we might assume the event *did* have a significant impact on the park visitation in that state. This is not statistical proof of causation, but a similar process to a Granger Causality Test. We will conduct a t-test between the actual visitation records and the prediction to see if there is a 'significant' difference. The significance level of $\alpha=.05$ will be used.
+ We split the recreation visitor data before and after the event. For the 2008 recession, we split the data before and after December 1st, 2007 and for the 2020 pandemic, we split the data before and after March 1st, 2020. The data before the event was used to train the ARIMA model and the data after the event was used. The data for each state after the event was used to test the model. This method was devised in order to see if the pandemic and recession caused a change in typical visitation patterns. If the model predictions after the event are very similar to the true values, we might assume that the event did not have a significant impact on the park visitation in that state. If the model predictions are very dissimilar to the true values, then we might assume the event *did* have a significant impact on the park visitation in that state. This is not statistical proof of causation, but a similar process to a Granger Causality Test. We will conduct a t-test between the actual visitation records and the prediction to see if there is a 'significant' difference. The significance level of alpha = 0.05 will be used.
 
-In total we made 110 models, 2 per each state (or state-like entity e.g. Puerto Rico, DC, Guam, etc.) included in the dataset. The models were evaluated by using root mean squared error divided by standard deviation of the data. (this method is used as a way to standardize the errors across states with vastly different recreational visit counts) and the p-value of a t-test comparing the predicted and true values. For the Covid-19 event, we found that these five states had the largest p-values: Tennessee, Maine, Michigan, New Mexico, and North Dakota. The states with the smallest standard errors were Michigan, South Dakota, North Dakota, Maine, and Wyoming. Michigan Maine, and North Dakota's models performed best by both metrics used. Hence, we will say (in a limited statistical capacity) that these three state's National Parks were least impacted by the global pandemic. The states with the lowest p-values and highest standardized errors after the pandemic were Louisiana (INSERT IMAGE IG), American Samoa, Rhode Island, Illinois, and South Carolina. Therefore we find it likely to say that these five states were most heavily impacted by the pandemic, as the model trained on the data before the Covid-19 pandemic fit the least well.
+In total we made 110 models, 2 per each state (or state-like entity e.g. Puerto Rico, DC, Guam, etc.) included in the dataset. The models were evaluated by using root mean squared error divided by standard deviation of the data. (this method is used as a way to standardize the errors across states with vastly different recreational visit counts) and the p-value of a t-test comparing the predicted and true values. For the Covid-19 event, we found that these five states had the largest p-values: Tennessee, Maine, Michigan, New Mexico, and North Dakota. The states with the smallest standard errors were Michigan, South Dakota, North Dakota, Maine, and Wyoming. Michigan Maine, and North Dakota's models performed best by both metrics used. Hence, we will say (in a limited statistical capacity) that these three state's National Parks were least impacted by the global pandemic. The states with the lowest p-values and highest standardized errors after the pandemic were Louisiana (refer to figure 6), American Samoa, Rhode Island, Illinois, and South Carolina. Therefore we find it likely to say that these five states were most heavily impacted by the pandemic, as the model trained on the data before the Covid-19 pandemic fit the least well.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/louisianavisits.png" alt="Louisiana recreation visitor predictions post-pandemic, with significant difference from true values." width="500" >}}
+
+##### Figure 6: Louisiana recreation visitor predictions post-pandemic, with significant difference from true values.
 
 Overall, we found that 28 states had statistically significant p-values from their t-tests and 27 did not. We think it is likely that about half of the states' National Parks' visitation rates were heavily impacted by the events of the Covid-2019 pandemic.
 
-For the model trained on pre-2008 recession data and evaluated on post-2008 recession (but before March 2020) data, there are 3 states in that are in the list of top five highest p-value values and top ten lowest standardized root mean squared error values: Massachusetts, Pennsylvania, and West Virginia. Hence, we will say in our limited statistical capacity that these states' national parks' were least impacted by the 2008 recession. American Samoa, Guam, Illinois, Kentucky, and the Virgin Islands were in the list of top five lowest p-value scores and top five highest standardized root mean square errors; thus we find it likely that they were most impacted by the 2008 recession. One possible explanation for this is that American Samoa, Guam, and the Virgin Islands are all islands and territories, meaning that they are more expensive for travelers from the mainland United States. For the 2008 recession, we found that 33 out of the states models' predictions had p-values below 0.05 meaning that they are statistically significant. We find it likely (again, in our statistically limited sense) that these states' national parks' visitation numbers were impacted by the 2008 recession.
+For the model trained on pre-2008 recession data and evaluated on post-2008 recession (but before March 2020) data, there are 3 states in that are in the list of top five highest p-value values and top ten lowest standardized root mean squared error values: Massachusetts, Pennsylvania (refer to figure 7), and West Virginia. Hence, we will say in our limited statistical capacity that these states' national parks' were least impacted by the 2008 recession. American Samoa, Guam, Illinois, Kentucky, and the Virgin Islands were in the list of top five lowest p-value scores and top five highest standardized root mean square errors; thus we find it likely that they were most impacted by the 2008 recession. One possible explanation for this is that American Samoa, Guam, and the Virgin Islands are all islands and territories, meaning that they are more expensive for travelers from the mainland United States. For the 2008 recession, we found that 33 out of the states models' predictions had p-values below 0.05 meaning that they are statistically significant. We find it likely (again, in our statistically limited sense) that these states' national parks' visitation numbers were impacted by the 2008 recession.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/pennsylvaniavisits.png" alt="Pennsylvania recreation visitor predictions after the 2008 pandemic. Note that there is no statistically significant difference between the prediction and the true values." width="500" >}}
+
+##### Figure 7: Pennsylvania recreation visitor predictions after the 2008 pandemic. Note that there is no statistically significant difference between the prediction and the true values.
+
 
 #### Does Google Search Data for terms related to 'recession', 'best national park', 'covid-19' and 'national park' impact our prediction abilities for national park recreational visitors?
 
@@ -121,11 +150,15 @@ After our findings from the previous question, we wanted to continue to examine 
 
 The function tries differencing and then calculating weighted moving averages with different window sizes in order to make the data stationary. Once both the search data and visitation data for each state has been standardized, we used the statsmodels.tsa.stattools.grangercausalitytests.
 
-We want to note that Granger Causality is a controversial method that does not prove statistical causality, but it is a useful tool in the industry for identifying trends\footnote{As we say at Meta, "Move fast!". It is often more important as an industry data scientist to identify broad trends and actionable insights rather than rigorously proving causation.}. We once again used a significance level of $\alpha=.05$ for our tests.
+We want to note that Granger Causality is a controversial method that does not prove statistical causality, but it is a useful tool in the industry for identifying trends\footnote{As we say at Meta, "Move fast!". It is often more important as an industry data scientist to identify broad trends and actionable insights rather than rigorously proving causation.}. We once again used a significance level of alpha = 0.05 for our tests.
 
 We found that for 26 states, their national parks recreational visitors predictions would by improved by using the search data for 'recession' and for 44 states, their predictions would be improved by using the search data for 'pandemic'. 
 
 Nine states' predictions were improved by the search data for 'best national parks' and fourteen states by the search data for 'national parks'. There are four states that were improved by both of the national parks query data: Montana, Nebraska, American Samoa, and Alabama.
+
+{{< figure src="https://raw.githubusercontent.com/scmcqueen/NationalParksDataMining/refs/heads/main/grangercausality.png" alt="The number of states with statistically significant results of Granger Causality test (with a significance level of alpha = 0.05) that were impacted by each query term." width="500" >}}
+
+##### Figure 8: The number of states with statistically significant results of Granger Causality test (with a significance level of alpha = 0.05) that were impacted by each query term.
 
 ### Discussion & Conclusions
 
