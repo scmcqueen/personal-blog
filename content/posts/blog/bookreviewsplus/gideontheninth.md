@@ -27,7 +27,7 @@ The emotional growth of Harrow & Gideon is devastating. They realize that they l
 
 And Harrowhark was undone. Completely, utterly, fully unraveled. The yarn is unspun.
 
-One last note: I listened to the next book *Harrowhark the Ninth* as an audiobook. I didn't catch that they were British. I should have. They use a lot of British slang.
+One last note: I listened to the next book *Harrow the Ninth* as an audiobook. I didn't catch that they were British. I should have. They use a lot of British slang.
 
 
 {{< figure src="https://cdn.thestorygraph.com/i1rlwou8rko9ml09iytak3m7pjiz" alt="Cover of Gideon the Ninth " width="300" >}}
