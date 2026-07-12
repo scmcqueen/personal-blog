@@ -36,6 +36,10 @@ We love going to this place after I take a morning dip in the Bay at Coyote Poin
 
 This is almost the opposite of Bonjour Bakehouse: where at Bounjour, baked-goods > coffee, at Kaizen, coffee > baked-goods. The baked goods are good, but not amazing. This is the place to take your coffee-snob friends!
 
+### Brother's Cafe
+
+I almost forgot about [Brother's Cafe](https://brotherscafes.com/) in San Mateo. It's up in the hills by the College of San Mateo. This is one of my favorite places because it reminds me of childhood! I feel like I'm going to Ohop in Birmingham or a coney island. It's a perfect diner with amazing banana pancakes, homestyle omelettes, and mochas served in a glass mug (my favorite!). Brother's Cafe is the kind of place that I see friends meet and gossip, families go after sports games, and older couples read the newspaper.
+
 ### Toast in Town
 
 Okay, so [Toast in Town](https://toastintown.com/) is technically in Foster City but it is close enough to San Mateo to make my list! This place feels like home to me. Within walking distance of the public library and the beautiful Leo J. Ryan park, Toast in Town is our brunch spot. The food is so delicious (the sweet and savory both hit) and the drinks are rather tasty (I love the ube latte!). It feels like a family spot, in the best way. The decor is cute and a little kitschy: at one point, they inexplicably had a giant statue of an orc! They even dressed him up for Christmas with a little Santa hat. At Toast in Town, I feel like a local and a part of the community. It is very special to me.
