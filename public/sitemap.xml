@@ -22,10 +22,16 @@
   </url><url>
     <loc>http://localhost:1313/posts/blog/serious/</loc>
   </url><url>
+    <loc>http://localhost:1313/posts/blog/bookreviewsplus/witchesguidetomagicalinnkeeping/</loc>
+    <lastmod>2026-05-08T19:55:18-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/liesoflockelamora/</loc>
     <lastmod>2026-05-08T19:55:18-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/books/</loc>
+    <lastmod>2026-05-08T19:55:18-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/cozy/</loc>
     <lastmod>2026-05-08T19:55:18-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/fantasy/</loc>
@@ -68,9 +74,6 @@
     <lastmod>2026-04-19T15:18:51-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/onceuponaseaside/</loc>
-    <lastmod>2026-04-17T10:32:54-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/cozy/</loc>
     <lastmod>2026-04-17T10:32:54-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/blog/bookreviewsplus/slowgods/</loc>
